@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	x:Class="SLD.Tezos.Client.Accounts.AccountEntryItemView">
+	<ContentView.Content>
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition
+					Width="*" />
+				<ColumnDefinition
+					Width="Auto" />
+			</Grid.ColumnDefinitions>
+
+			<Label
+				x:Name="_Text"
+				LineBreakMode="WordWrap"
+				Text="{Binding Text}" />
+
+			<controls:AmountLabel
+				Amount="{Binding Item.Amount}"
+				Margin="24,0,0,0"
+				Grid.Column="1" />
+		</Grid>
+	</ContentView.Content>
+</ContentView>

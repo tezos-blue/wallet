@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	x:Class="SLD.Tezos.Client.Identities.IdentityPage">
+	<ContentPage.Content>
+		<TableView
+			Intent="Settings">
+			<TableRoot>
+				<TableSection
+					Title="{loc:Translate Backup}">
+					<ViewCell>
+						<StackLayout x:Name="_BackupProviders">
+						</StackLayout>
+					</ViewCell>
+					<SwitchCell
+						Text="{loc:Translate MarkAsBackedUp}"
+						On="{Binding IsBackedUp, Mode=TwoWay}" />
+				</TableSection>
+			</TableRoot>
+		</TableView>
+	</ContentPage.Content>
+</ContentPage>

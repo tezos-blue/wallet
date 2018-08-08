@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	Title="{loc:Translate FirstIdentityLogin}"
+	x:Class="SLD.Tezos.Client.Identities.CreateIdentityUnlockPage">
+	<ContentPage.Content>
+		<StackLayout
+			Style="{StaticResource Page|Layout}">
+			<Entry
+				x:Name="_UnlockEntry"
+				Text="{Binding RepeatedPassphrase, Mode=TwoWay}"
+				Placeholder="{loc:Translate Passphrase}"
+				TextChanged="OnTextChanged"
+				IsPassword="True" />
+
+			<Button
+				x:Name="_Login"
+				Style="{StaticResource Button|Page|Continue}"
+				Text="{loc:Translate Unlock}"
+				IsEnabled="{Binding CanLogin}"
+				Clicked="OnClickLogin" />
+
+			<controls:InfoView
+				TextID="FirstIdentityLoginTip" />
+
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="27499Hassmann.tezos-blue-test" Publisher="CN=F1B3C000-2CD9-4846-A2D4-A5B3B3AC6004" Version="0.3.1.0" />
+  <mp:PhoneIdentity PhoneProductId="08aaf001-fd8f-4243-a34d-0a73298f2b7b" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>tezos.blue</DisplayName>
+    <PublisherDisplayName>Hassmann</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="en" />
+    <Resource Language="de" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Xamarin.UWP.App">
+      <uap:VisualElements DisplayName="tezos.blue" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="tezos.blue wallet" BackgroundColor="#303030">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png" ShortName="tezos.blue">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="white" />
+      </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.fileTypeAssociation">
+          <uap:FileTypeAssociation Name="blue_documents">
+            <uap:DisplayName>tezos.blue Document</uap:DisplayName>
+            <uap:Logo>Icons\Logo-64.png</uap:Logo>
+            <uap:InfoTip>tezos.blue Document</uap:InfoTip>
+            <uap:EditFlags OpenIsSafe="true" />
+            <uap:SupportedFileTypes>
+              <uap:FileType ContentType="application/json">.blue</uap:FileType>
+              <uap:FileType ContentType="application/json">.json</uap:FileType>
+            </uap:SupportedFileTypes>
+          </uap:FileTypeAssociation>
+        </uap:Extension>
+        <uap:Extension Category="windows.shareTarget">
+          <uap:ShareTarget>
+            <uap:SupportedFileTypes>
+              <uap:FileType>.blue</uap:FileType>
+              <uap:FileType>.json</uap:FileType>
+            </uap:SupportedFileTypes>
+          </uap:ShareTarget>
+        </uap:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

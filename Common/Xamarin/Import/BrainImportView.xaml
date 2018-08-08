@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	x:Class="SLD.Tezos.Client.Import.BrainImportView">
+	<ContentView.Content>
+		<StackLayout>
+			<!--<Grid.RowDefinitions>
+				<RowDefinition
+					Height="Auto" />
+				<RowDefinition
+					Height="*" />
+				<RowDefinition
+					Height="Auto" />
+			</Grid.RowDefinitions>-->
+
+			<Label
+				Style="{StaticResource Text|Label}"
+				Text="{loc:Translate KeyText}"
+				HorizontalOptions="FillAndExpand"
+				VerticalOptions="Start"
+				VerticalTextAlignment="Center" />
+
+			<!--<StackLayout
+				Orientation="Horizontal">-->
+				<Editor
+					Grid.Row="1"
+					x:Name="_Brain"
+				HorizontalOptions="FillAndExpand"
+				VerticalOptions="FillAndExpand"
+				BackgroundColor="#F0F0FF"
+					HeightRequest="128"
+					Text="{Binding BrainPrivate, Mode=OneWayToSource, UpdateSourceEventName=TextChanged}" />
+				<!--<Button
+					x:Name="_Paste"
+					Text="{loc:Translate Paste}"
+					IsEnabled="False"
+					HorizontalOptions="End"
+					VerticalOptions="Start"
+					Clicked="OnPasteKey" />-->
+			<!--</StackLayout>-->
+
+			<controls:InfoView
+				Grid.Row="2"
+				VerticalOptions="End"
+				TextID="ImportBrainTip" />
+		</StackLayout>
+	</ContentView.Content>
+</ContentView>

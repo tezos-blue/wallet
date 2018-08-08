@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutLightIdentity" xml:space="preserve">
+    <value>适用于少量资金的日常交易。方便快捷，仅需输入PIN（个人识别码）。</value>
+  </data>
+  <data name="AboutStandardIdentity" xml:space="preserve">
+    <value>适用于偶尔进行的大笔资金交易。操作步骤安全可靠。</value>
+  </data>
+  <data name="AccountActivity" xml:space="preserve">
+    <value>账户活动记录</value>
+  </data>
+  <data name="AccountID" xml:space="preserve">
+    <value>账户ID</value>
+  </data>
+  <data name="AccountName" xml:space="preserve">
+    <value>账户名</value>
+  </data>
+  <data name="Accounts" xml:space="preserve">
+    <value>账户</value>
+  </data>
+  <data name="Account_Unknown" xml:space="preserve">
+    <value>未知账户</value>
+  </data>
+  <data name="Account_UnknownLong" xml:space="preserve">
+    <value>网络上无此账户</value>
+  </data>
+  <data name="Account_Use" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="Activation" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="ActivationCode" xml:space="preserve">
+    <value>激活码</value>
+  </data>
+  <data name="AddIdentity" xml:space="preserve">
+    <value>添加身份标识</value>
+  </data>
+  <data name="AgreementTitle" xml:space="preserve">
+    <value>协议</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="AlphanetDisclaimer" xml:space="preserve">
+    <value>请注意：Alphanet没有创世区块的数据，您的初始资产将为0.</value>
+  </data>
+  <data name="AmountRequired" xml:space="preserve">
+    <value>所需金额</value>
+  </data>
+  <data name="Approval_From" xml:space="preserve">
+    <value>从</value>
+  </data>
+  <data name="Approval_Sign" xml:space="preserve">
+    <value>签署</value>
+  </data>
+  <data name="Approval_To" xml:space="preserve">
+    <value>到</value>
+  </data>
+  <data name="Approval_TotalAmount" xml:space="preserve">
+    <value>总金额</value>
+  </data>
+  <data name="Approval_Transferring" xml:space="preserve">
+    <value>转帐中</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>备份</value>
+  </data>
+  <data name="BackupByFile" xml:space="preserve">
+    <value>保存备份文件</value>
+  </data>
+  <data name="BackupByMail" xml:space="preserve">
+    <value>通过邮件备份</value>
+  </data>
+  <data name="BackupFor" xml:space="preserve">
+    <value>身份标识备份</value>
+  </data>
+  <data name="BackupMailBody" xml:space="preserve">
+    <value>注意：
+1.请确认邮件中包含一份附件（防止某些邮箱出现问题）。
+2.请务必不要在邮件中记录密码，这将非常危险！
+将备份文件发送至您的邮箱。
+如果其他人得到您的备份文件，只要不泄露PIN或者密码，就无需担心，不会造成损失。</value>
+  </data>
+  <data name="BackupTip" xml:space="preserve">
+    <value>在各处保存您的备份文件。只要您不泄露自己的PIN或者密码就不会有危险。</value>
+  </data>
+  <data name="BackupVia" xml:space="preserve">
+    <value>选择一个备份目的地。</value>
+  </data>
+  <data name="BackupYourIdentity" xml:space="preserve">
+    <value>在您接收资金之前，请备份这个身份标识。如果没有备份，您在失去这台设备的时候会丢失您所有资产。</value>
+  </data>
+  <data name="Balance" xml:space="preserve">
+    <value>个人资产</value>
+  </data>
+  <data name="BePatient" xml:space="preserve">
+    <value>交易可能花费几分钟</value>
+  </data>
+  <data name="BlueStatement" xml:space="preserve">
+    <value>tezos.blue</value>
+  </data>
+  <data name="BrainWallet" xml:space="preserve">
+    <value>智能钱包</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CommitDelegate" xml:space="preserve">
+    <value>委托</value>
+  </data>
+  <data name="CommitTransfer" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>创建</value>
+  </data>
+  <data name="CreateAccount" xml:space="preserve">
+    <value>创建账户</value>
+  </data>
+  <data name="CreateLightIdentity" xml:space="preserve">
+    <value>创建PIN</value>
+  </data>
+  <data name="CreateLightIdentityTip" xml:space="preserve">
+    <value>注意：不要遗忘您的PIN！
+任何人将很难通过各种数字组合来破解您的钱包。</value>
+  </data>
+  <data name="CreateStandardIdentity" xml:space="preserve">
+    <value>创建密码</value>
+  </data>
+  <data name="CreateStandardIdentityTip" xml:space="preserve">
+    <value>注意：不要丢失您的密码！
+如果您遗忘了密码，所有该身份标识名下的资产将永远丢失。请将它写下来，保存在一个安全的地方。</value>
+  </data>
+  <data name="Delegate" xml:space="preserve">
+    <value>委托</value>
+  </data>
+  <data name="DelegateAmount" xml:space="preserve">
+    <value>委托的金额</value>
+  </data>
+  <data name="DelegatedTo" xml:space="preserve">
+    <value>被委托给</value>
+  </data>
+  <data name="DelegateTo" xml:space="preserve">
+    <value>委托给</value>
+  </data>
+  <data name="Delegate_Title" xml:space="preserve">
+    <value>委托资金</value>
+  </data>
+  <data name="DeleteAccount" xml:space="preserve">
+    <value>删除账户</value>
+  </data>
+  <data name="DestinationAccountID" xml:space="preserve">
+    <value>目标账户地址ID</value>
+  </data>
+  <data name="DestinationAccount" xml:space="preserve">
+    <value>目标账户地址</value>
+  </data>
+  <data name="DontLoseCredential" xml:space="preserve">
+    <value>请不要遗忘PIN和密码。
+并且确保您可以在其他设备上找到备份文件。</value>
+  </data>
+  <data name="EMail" xml:space="preserve">
+    <value>邮件</value>
+  </data>
+  <data name="EmailAndPassphrase" xml:space="preserve">
+    <value>邮件和证书</value>
+  </data>
+  <data name="EnterPIN" xml:space="preserve">
+    <value>输入PIN</value>
+  </data>
+  <data name="EnterPinToRestore" xml:space="preserve">
+    <value>输入PIN恢复</value>
+  </data>
+  <data name="EnterPINToSign" xml:space="preserve">
+    <value>输入PIN签署</value>
+  </data>
+  <data name="ExceedsMaxAmount" xml:space="preserve">
+    <value>资金不足</value>
+  </data>
+  <data name="Fees" xml:space="preserve">
+    <value>费用</value>
+  </data>
+  <data name="FirstIdentityLogin" xml:space="preserve">
+    <value>首次解锁</value>
+  </data>
+  <data name="FirstIdentityLoginTip" xml:space="preserve">
+    <value>在设备进入待机状态之前您的账户将保持解锁状态。</value>
+  </data>
+  <data name="FirstStep_P1" xml:space="preserve">
+    <value>创建您的第一个身份标识，进入Tezos网络。
+无需任何私人信息。</value>
+  </data>
+  <data name="FirstStep_Title" xml:space="preserve">
+    <value>第一步</value>
+  </data>
+  <data name="FromFaucet" xml:space="preserve">
+    <value>来自系统产出</value>
+  </data>
+  <data name="FundedAccount" xml:space="preserve">
+    <value>收款方</value>
+  </data>
+  <data name="FundedBy" xml:space="preserve">
+    <value>资金来源</value>
+  </data>
+  <data name="FundraiserWallet" xml:space="preserve">
+    <value>纸钱包（筹款PDF）</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="IAgree" xml:space="preserve">
+    <value>我同意</value>
+  </data>
+  <data name="Identities" xml:space="preserve">
+    <value>身份标识</value>
+  </data>
+  <data name="IdentityAccount" xml:space="preserve">
+    <value>身份账户</value>
+  </data>
+  <data name="IdentityAlreadyKnown" xml:space="preserve">
+    <value>身份标识存在于钱包中</value>
+  </data>
+  <data name="IdentityID" xml:space="preserve">
+    <value>身份id</value>
+  </data>
+  <data name="IdentityName" xml:space="preserve">
+    <value>身份标识名字</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="ImportBrainTip" xml:space="preserve">
+    <value>任何输入精确文本内容的人都可以进入您的身份账户。请小心设置，尽量选择长和奇异的句子。不要使用歌词或者文学名句。</value>
+  </data>
+  <data name="ImportBrainWallet" xml:space="preserve">
+    <value>打开智能钱包</value>
+  </data>
+  <data name="ImportEd25519Tip" xml:space="preserve">
+    <value>./alphanet.sh 客户端显示身份 my_identity -show-secret</value>
+  </data>
+  <data name="ImportFaucet" xml:space="preserve">
+    <value>导入测试身份</value>
+  </data>
+  <data name="ImportFundraiserWallet" xml:space="preserve">
+    <value>导入纸钱包</value>
+  </data>
+  <data name="ImportKeys" xml:space="preserve">
+    <value>导入密钥</value>
+  </data>
+  <data name="ImpossibleToGuess" xml:space="preserve">
+    <value>无法猜测</value>
+  </data>
+  <data name="InternalTransfer" xml:space="preserve">
+    <value>内部转账</value>
+  </data>
+  <data name="Invalid" xml:space="preserve">
+    <value>无效的</value>
+  </data>
+  <data name="InvalidPassphraseTryAgain" xml:space="preserve">
+    <value>无效密码，请重新尝试。</value>
+  </data>
+  <data name="InvalidPINTryAgain" xml:space="preserve">
+    <value>无效PIN，请重新尝试</value>
+  </data>
+  <data name="InvalidSentence" xml:space="preserve">
+    <value>无效语句</value>
+  </data>
+  <data name="KeyData" xml:space="preserve">
+    <value>密钥数据</value>
+  </data>
+  <data name="KeyText" xml:space="preserve">
+    <value>密钥文本</value>
+  </data>
+  <data name="LightIdentity" xml:space="preserve">
+    <value>4位数PIN</value>
+  </data>
+  <data name="MarkAsBackedUp" xml:space="preserve">
+    <value>标记为已备份</value>
+  </data>
+  <data name="max" xml:space="preserve">
+    <value>最大值</value>
+  </data>
+  <data name="mine" xml:space="preserve">
+    <value>我</value>
+  </data>
+  <data name="Mnemonic" xml:space="preserve">
+    <value>助记词（15个单词）</value>
+  </data>
+  <data name="NegativeAmount" xml:space="preserve">
+    <value>只能是正数金额</value>
+  </data>
+  <data name="NetworkFee" xml:space="preserve">
+    <value>网络费用</value>
+  </data>
+  <data name="NotAnAmount" xml:space="preserve">
+    <value>非法金额</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OriginateAccount" xml:space="preserve">
+    <value>打开新账户</value>
+  </data>
+  <data name="Passphrase" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="PassphraseTip" xml:space="preserve">
+    <value>越长越安全</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="PendingTransactions" xml:space="preserve">
+    <value>交易待处理</value>
+  </data>
+  <data name="PIN" xml:space="preserve">
+    <value>PIN</value>
+  </data>
+  <data name="PIN4Digits" xml:space="preserve">
+    <value>4位数PIN</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>隐私</value>
+  </data>
+  <data name="PrivacyPromise" xml:space="preserve">
+    <value>tezos.blue不会储存或者传输与您个人相关的身份信息。
+tezos.bule发送软件运行数据和崩溃报告。此数据保留7天。</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>tezos.blue</value>
+  </data>
+  <data name="Quit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="RandomKeys" xml:space="preserve">
+    <value>随机密钥</value>
+  </data>
+  <data name="ReceivedBy" xml:space="preserve">
+    <value>从</value>
+  </data>
+  <data name="ReleaseNotes" xml:space="preserve">
+    <value>发布日志</value>
+  </data>
+  <data name="ReleaseNote_0_2_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepeatPIN" xml:space="preserve">
+    <value>重复输入PIN</value>
+  </data>
+  <data name="RestoreIdentity" xml:space="preserve">
+    <value>恢复身份标识</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>重试</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>安全性</value>
+  </data>
+  <data name="SecurityPromise" xml:space="preserve">
+    <value>私钥或者其他任何私密信息不会上传至网络。
+在您设备内存中的信息，利用您设置的密码进行了AES加密。
+钱包APP无法在底层引擎中访问您的私钥。
+更多关于引擎安全概念的内容，请查看GitHub库tezos-blue/client中关于安全审阅的内容。</value>
+  </data>
+  <data name="SelectIdentityType" xml:space="preserve">
+    <value>选择身份类别</value>
+  </data>
+  <data name="Service_Connected" xml:space="preserve">
+    <value>已连接到tezos.blue</value>
+  </data>
+  <data name="Service_Connecting" xml:space="preserve">
+    <value>正在连接……</value>
+  </data>
+  <data name="Service_ConnectingFailed" xml:space="preserve">
+    <value>无法连接到tezos.blue，即将重试。</value>
+  </data>
+  <data name="Service_CycleCleanup" xml:space="preserve">
+    <value>网络正在清算一个周期的变化，交易暂停几分钟。</value>
+  </data>
+  <data name="Service_ServiceStateChanged" xml:space="preserve">
+    <value>服务状态已更改</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>分享</value>
+  </data>
+  <data name="SignOrigination" xml:space="preserve">
+    <value>签署账户创建</value>
+  </data>
+  <data name="SignTransfer" xml:space="preserve">
+    <value>签署交易转帐</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>来源</value>
+  </data>
+  <data name="SourceAccount" xml:space="preserve">
+    <value>来源账户</value>
+  </data>
+  <data name="StandardIdentity" xml:space="preserve">
+    <value>密码或者短语</value>
+  </data>
+  <data name="StorageFee" xml:space="preserve">
+    <value>储存费</value>
+  </data>
+  <data name="TotalBalance" xml:space="preserve">
+    <value>总资产</value>
+  </data>
+  <data name="Transfer" xml:space="preserve">
+    <value>转帐</value>
+  </data>
+  <data name="TransferAmount" xml:space="preserve">
+    <value>转帐金额</value>
+  </data>
+  <data name="TransferredTo" xml:space="preserve">
+    <value>到</value>
+  </data>
+  <data name="Transfer_Title" xml:space="preserve">
+    <value>发送tez</value>
+  </data>
+  <data name="Transfer_ToForeignAccount" xml:space="preserve">
+    <value>至他人账户</value>
+  </data>
+  <data name="Transfer_ToOwnAccount" xml:space="preserve">
+    <value>至本人账户</value>
+  </data>
+  <data name="Unlock" xml:space="preserve">
+    <value>解锁</value>
+  </data>
+  <data name="UserPromise" xml:space="preserve">
+    <value>软件与服务根据开源代码提供，不做任何担保。请自行承担潜在的不可预知风险。</value>
+  </data>
+  <data name="UserStatement" xml:space="preserve">
+    <value>您</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>欢迎使用tezos.blue</value>
+  </data>
+  <data name="Word" xml:space="preserve">
+    <value>单词</value>
+  </data>
+</root>

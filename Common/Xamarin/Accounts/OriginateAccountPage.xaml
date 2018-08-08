@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	xmlns:service="clr-namespace:SLD.Tezos.Client.Service"
+	xmlns:accounts="clr-namespace:SLD.Tezos.Client.Accounts"
+	Title="{loc:Translate OriginateAccount}"
+	x:Class="SLD.Tezos.Client.Origination.OriginateAccountPage">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout
+				Style="{StaticResource Page|Layout}">
+
+				<Label
+					Style="{StaticResource Text|Label}"
+					Text="{loc:Translate SourceAccount}" />
+
+				<accounts:AccountView
+					Margin="-12"
+					Account="{Binding SelectedSource}" />
+
+				<Label
+					Style="{StaticResource Text|Label}"
+					Text="{loc:Translate AccountName}" />
+
+				<Entry
+					Text="{Binding Name, Mode=TwoWay}" />
+
+				<Label
+					Style="{StaticResource Text|Label}"
+					Text="{loc:Translate TransferAmount}" />
+
+				<StackLayout
+					Orientation="Horizontal">
+
+					<controls:AmountEntry
+						HorizontalOptions="FillAndExpand"
+						Amount="{Binding Amount}"
+						MaxAmount="{Binding MaxAmount}"
+						IsValid="{Binding IsAmountValid}"
+						Placeholder="{Binding AmountHint}" />
+					<Button
+						VerticalOptions="Start"
+						Text="{loc:Translate All}"
+						Clicked="OnTransferAll" />
+				</StackLayout>
+
+				<Button
+					Style="{StaticResource Button|Page|Continue}"
+					Text="{loc:Translate CreateAccount}"
+					IsEnabled="{Binding CanCommit}"
+					Clicked="OnClickCreate" />
+
+				<controls:InfoView
+					TextID="BePatient" />
+
+				<service:ServiceMessageView
+					x:Name="_ServiceMessage" />
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	x:Class="SLD.Tezos.Client.MainMenu">
+    <ContentPage.Content>
+        <StackLayout Margin="12,36,12,12">
+			<Button
+				Text="{loc:Translate Home}" 
+				Clicked="GoHome"/>
+			<Button
+				Text="{loc:Translate Identities}"
+				Clicked="GoIdentities" />
+			<!--<Button
+				Text="{loc:Translate Settings}"
+				Clicked="GoSettings" />-->
+
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

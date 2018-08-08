@@ -1,0 +1,158 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>%24/Tezos/Wallet/Xamarin/Common</SccProjectName>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <SccAuxPath>https://lautereck.visualstudio.com</SccAuxPath>
+    <SccLocalPath>.</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SLD.Tezos.Client</RootNamespace>
+    <DefaultLanguage>en</DefaultLanguage>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWarn>1701;1702;1705;NU1603</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD2_0</DefineConstants>
+    <!--workaround for breakpoints in uwp-->
+    <DebugType>Full</DebugType>
+    <NoWarn>1701;1702;1705;NU1603</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Icons\AddIdentity-128.png" />
+    <None Remove="Icons\ContractAccount-128.png" />
+    <None Remove="Icons\Delegate-128.png" />
+    <None Remove="Icons\IdentityAccount-128.png" />
+    <None Remove="Icons\LightIdentity-128.png" />
+    <None Remove="Icons\StandardIdentity-128.png" />
+    <None Remove="Icons\Trash-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Assets\Logo\Logo-256.png" Link="Icons\Logo-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Assets\Common\Backup-128.png" Link="Icons\Backup-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\AddIdentity-128.png" />
+    <EmbeddedResource Include="Icons\ContractAccount-128.png" />
+    <EmbeddedResource Include="Icons\Delegate-128.png" />
+    <EmbeddedResource Include="Icons\IdentityAccount-128.png" />
+    <EmbeddedResource Include="Icons\LightIdentity-128.png" />
+    <EmbeddedResource Include="Icons\StandardIdentity-128.png" />
+    <EmbeddedResource Include="Icons\Trash-128.png" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Platform)'=='iPhone'">
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NETStandard.Library" Version="2.0.1" />
+    <PackageReference Include="Tezos.Blue.Platforms" Version="0.3.2" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.637273" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\Resources\Resources.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Identities\CreateIdentityPage.xaml.cs">
+      <DependentUpon>CreateIdentityPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Identities\IdentityTypeCell.xaml.cs">
+      <DependentUpon>IdentityTypeCell.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Accounts\AccountCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Accounts\AccountEntryItemView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Accounts\AccountEntryView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Accounts\AccountNotFoundPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Accounts\SelectOwnDestinationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\InfoView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Delegation\DelegatePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FirstSteps\FirstStepsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Identities\CreateIdentityUnlockPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Identities\CreateIdentityPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Identities\IdentitiesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Identities\IdentityCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Identities\IdentityPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Identities\IdentityTypeCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Identities\IdentityView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Identities\ImportFaucetPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Identities\ImportKeysPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Identities\RestoreIdentityPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Identities\SelectIdentityTypePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Import\BrainImportView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Import\Ed25519ImportView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Import\FundraiserImportView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainMenu.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Service\Agreement.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Service\BackupPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Service\ExitPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Service\ReleaseNotesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Service\ServiceMessageView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Service\SettingsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SplashScreen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

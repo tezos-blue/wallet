@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	x:Class="SLD.Tezos.Client.Service.ReleaseNotesPage"
+	Title="{loc:Translate ReleaseNotes}">
+	<ContentPage.Content>
+		<StackLayout
+			Style="{StaticResource Page|Layout}"
+			Margin="24">
+			<Label
+				VerticalOptions="Start"
+				Style="{StaticResource Text|Page|Title}"
+				Text="{loc:Translate ReleaseNotes}" />
+			<ScrollView
+				VerticalOptions="Start"
+				>
+				<StackLayout>
+					<Label
+						TextColor="DarkRed"
+						FontAttributes="Bold"
+						Text="Live!" />
+					<Label
+						TextColor="DarkRed"
+						Text="You are on the Betanet now. Your fundraiser wallet can be imported and used." />
+					<Label
+						TextColor="DarkRed"
+						Text="All transactions are expected - but not guaranteed - to persist into the Mainnet." />
+					<Label
+						FontAttributes="Bold"
+						Text="0.3.1"
+						Margin="0,24,0,12" />
+					<Label
+						Text="Portuguese localization" />
+					<Label
+						Text="Structured fees" />
+					<Label
+						FontAttributes="Bold"
+						Text="0.3"
+						Margin="0,24,0,12" />
+					<Label
+						Text="Realtime password check for fundraiser import" />
+					<Label
+						Text="Localization for:&#x0a;Croatian/Serbian&#x0a;Korean" />
+
+					<Label
+						FontAttributes="Bold"
+						Text="0.2.8"
+						Margin="0,24,0,12" />
+					<Label
+						Text="Localization for:&#x0a;Chinese&#x0a;English&#x0a;French&#x0a;German&#x0a;Spanish&#x0a;Vietnamese&#x0a;" />
+
+					<Label
+						FontAttributes="Bold"
+						Text="0.2.7"
+						Margin="0,24,0,12" />
+					<Label
+						Text="KYC activation code for paper wallets.&#x0a;Try Import Keys when creating a new identity." />
+
+					<Label
+						FontAttributes="Bold"
+						Text="0.2.6"
+						Margin="0,24,0,12" />
+					<Label
+						Text="Delegation: Create a delegated account" />
+					
+					<Label
+						FontAttributes="Bold"
+						Text="0.2.5"
+						Margin="0,24,0,12" />
+					<Label
+						Text="{loc:Translate ReleaseNote_0_2_5}" />
+				</StackLayout>
+			</ScrollView>
+			<Button
+				Text="{loc:Translate OK}" 
+				VerticalOptions="End"
+				Clicked="OnDismiss"
+				/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

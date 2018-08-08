@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	x:Class="SLD.Tezos.Client.Service.Agreement">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style
+				x:Key="Text|Party"
+				TargetType="Label">
+				<Setter
+					Property="HorizontalOptions"
+					Value="Center" />
+				<Setter
+					Property="FontAttributes"
+					Value="Bold" />
+				<Setter
+					Property="Margin"
+					Value="12" />
+			</Style>
+			<Style
+				x:Key="Text|Topic"
+				TargetType="Label">
+				<Setter
+					Property="FontAttributes"
+					Value="Italic" />
+				<Setter
+					Property="Margin"
+					Value="0, 24, 0, 0" />
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<ScrollView
+			Margin="24">
+			<StackLayout
+				>
+				<Label
+					Text="{loc:Translate AgreementTitle}"
+					HorizontalOptions="Center"
+					Style="{StaticResource Text|Page|Title}" />
+				<Label
+					Text="{loc:Translate UserStatement}"
+					Style="{StaticResource Text|Party}" />
+				<Label
+					Text="{loc:Translate UserPromise}" />
+				<!--<Grid
+					HorizontalOptions="Center"
+					Margin="24">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition
+							Width="*" />
+						<ColumnDefinition
+							Width="*" />
+					</Grid.ColumnDefinitions>
+					<Button
+						Text="{loc:Translate Quit}"
+						Clicked="OnQuit" />
+					<Button
+						Text="{loc:Translate IAgree}"
+						Clicked="OnAgree" 
+						Grid.Column="1"/>
+				</Grid>-->
+				<Button
+					Text="{loc:Translate IAgree}"
+					Clicked="OnAgree"
+					Margin="24"
+					HorizontalOptions="End" />
+				<Label
+					Text="{loc:Translate BlueStatement}"
+					Style="{StaticResource Text|Party}" />
+
+				<Label
+					Text="{loc:Translate Privacy}"
+					Style="{StaticResource Text|Topic}" />
+				<Label
+					Text="{loc:Translate PrivacyPromise}" />
+				<Label
+					Text="{loc:Translate Security}"
+					Style="{StaticResource Text|Topic}" />
+				<Label
+					Text="{loc:Translate SecurityPromise}" />
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

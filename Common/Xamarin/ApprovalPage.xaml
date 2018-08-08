@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:accounts="clr-namespace:SLD.Tezos.Client.Accounts"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	x:Class="SLD.Tezos.Client.ApprovalPage">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout
+				Style="{StaticResource Page|Layout}">
+
+				<StackLayout.Resources>
+					<ResourceDictionary>
+						<Style
+							x:Key="Position"
+							TargetType="StackLayout">
+							<Setter
+								Property="Orientation"
+								Value="Horizontal" />
+						</Style>
+						<Style
+							x:Key="Position|Name"
+							TargetType="Label">
+							<Setter
+								Property="HorizontalOptions"
+								Value="StartAndExpand" />
+						</Style>
+						<Style
+							x:Key="Position|Amount"
+							TargetType="controls:AmountLabel">
+						</Style>
+					</ResourceDictionary>
+				</StackLayout.Resources>
+
+				<Label
+					x:Name="_Title"
+					Style="{StaticResource Text|Page|Title}" />
+
+				<Frame
+					Style="{StaticResource Page|Approval|Frame}">
+					<StackLayout>
+
+						<Label
+							Style="{DynamicResource Text|Label}"
+							Text="{loc:Translate Approval_From}" />
+
+						<Label
+							x:Name="_SourceAccount" />
+
+						<StackLayout
+							x:Name="_Destination">
+
+							<Label
+								Style="{DynamicResource Text|Label}"
+								Text="{loc:Translate Approval_To}" />
+
+							<Label
+								x:Name="_DestinationAccount" />
+						</StackLayout>
+
+						<Label
+							Style="{DynamicResource Text|Label}"
+							Text="{loc:Translate Approval_Transferring}" />
+
+						<StackLayout
+							Style="{StaticResource Position}">
+							<Label
+								Text="{loc:Translate TransferAmount}"
+								Style="{StaticResource Position|Name}" />
+							<controls:AmountLabel
+								x:Name="_TransferAmount"
+								Style="{StaticResource Position|Amount}" />
+						</StackLayout>
+
+						<!--Fees -->
+						<StackLayout
+							Style="{StaticResource Position}"
+							x:Name="_FeeSummary"
+							>
+							<Label
+								Text="{loc:Translate Fees}"
+								Style="{StaticResource Position|Name}" 
+								HorizontalOptions="Start"
+								VerticalOptions="Center"
+								/>
+							<Button
+								HorizontalOptions="StartAndExpand"
+								Text="?" 
+								Clicked="OnClickFees"/>
+							<controls:AmountLabel
+								x:Name="_TotalFees"
+								Style="{StaticResource Position|Amount}" />
+						</StackLayout>
+
+						<!--Fee Details -->
+						<StackLayout
+							x:Name="_FeeDetails"
+							IsVisible="False">
+
+							<StackLayout
+								Style="{StaticResource Position}">
+								<Label
+									Text="{loc:Translate NetworkFee}"
+									Style="{StaticResource Position|Name}" />
+								<controls:AmountLabel
+									x:Name="_NetworkFeeAmount"
+									Style="{StaticResource Position|Amount}" />
+							</StackLayout>
+
+							<StackLayout
+								Style="{StaticResource Position}"
+								x:Name="_StorageFee">
+								<Label
+									Text="{loc:Translate StorageFee}"
+									Style="{StaticResource Position|Name}" />
+								<controls:AmountLabel
+									x:Name="_StorageFeeAmount"
+									Style="{StaticResource Position|Amount}" />
+							</StackLayout>
+
+							<StackLayout
+								Style="{StaticResource Position}"
+								>
+								<Label
+									Text="{loc:Translate ServiceFee}"
+									Style="{StaticResource Position|Name}" />
+								<controls:AmountLabel
+									x:Name="_ServiceFeeAmount"
+									Style="{StaticResource Position|Amount}" />
+							</StackLayout>
+
+						</StackLayout>
+
+						<StackLayout
+							Style="{StaticResource Position}"
+							Margin="0, 0, 0, 36">
+							<Label
+								Text="{loc:Translate Approval_TotalAmount}"
+								Style="{StaticResource Position|Name}" />
+							<StackLayout>
+								<BoxView
+									BackgroundColor="Black"
+									HeightRequest="1"
+									HorizontalOptions="Fill" />
+								<controls:AmountLabel
+									x:Name="_TotalAmount"
+									FontAttributes="Bold"
+									Style="{StaticResource Position|Amount}" />
+							</StackLayout>
+						</StackLayout>
+
+						<controls:CredentialEntry 
+							x:Name="_Commit"
+							ButtonTextID="Approval_Sign"
+							PINTextID="EnterPINToSign"
+							/>
+						
+					</StackLayout>
+				</Frame>
+
+				<Button
+					HorizontalOptions="Center"
+					VerticalOptions="CenterAndExpand"
+					Text="{loc:Translate Cancel}"
+					Clicked="OnClickCancel" />
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

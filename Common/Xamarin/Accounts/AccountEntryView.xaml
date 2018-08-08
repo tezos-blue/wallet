@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	x:Class="SLD.Tezos.Client.Accounts.AccountEntryView"
+	Margin="0, 0, 0, 12">
+	<ContentView.Resources>
+	</ContentView.Resources>
+	<ContentView.Content>
+		<Grid x:Name="_Layout">
+			<Grid.RowDefinitions>
+				<RowDefinition
+					Height="Auto" />
+				<RowDefinition
+					Height="*" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition
+					Width="*" />
+				<ColumnDefinition
+					Width="Auto" />
+			</Grid.ColumnDefinitions>
+
+			<StackLayout
+				x:Name="_DateFee"
+				Orientation="Horizontal"
+				VerticalOptions="End"
+				HorizontalOptions="FillAndExpand">
+				<Label
+					x:Name="_Time"
+					HorizontalOptions="StartAndExpand"
+					LineBreakMode="TailTruncation"
+					Style="{StaticResource Text|Small}"
+					Text="{Binding Time}" />
+				<Label
+					IsVisible="{Binding HasFee}"
+					TextColor="{StaticResource Color|Dim}"
+					HorizontalOptions="End"
+					Style="{StaticResource Text|Small}"
+					Text="{loc:Translate Fees}" />
+
+				<controls:AmountLabel
+					IsVisible="{Binding HasFee}"
+					HorizontalOptions="End"
+					Style="{StaticResource Text|Small}"
+					Amount="{Binding NetworkFeePaid}" />
+			</StackLayout>
+
+			<controls:AmountLabel
+				x:Name="_Balance"
+				Margin="12,0,0,0"
+				Grid.Column="1"
+				TextColor="{StaticResource Color|Dim}"
+				Amount="{Binding Entry.Balance}" />
+
+			<StackLayout
+				x:Name="_Items" 
+				Grid.Row="1"/>
+		</Grid>
+	</ContentView.Content>
+</ContentView>

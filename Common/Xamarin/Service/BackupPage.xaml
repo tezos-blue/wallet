@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	x:Class="SLD.Tezos.Client.Service.BackupPage"
+	Title="{loc:Translate Backup}">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout
+				Style="{StaticResource Page|Layout}">
+
+				<!--<Label Text="{loc:Translate Backup}"
+					Style="{StaticResource Text|Page|Title}" />-->
+
+				<Label
+					Text="{Binding Model.Name}"
+					Style="{StaticResource Text|Page|Title}" />
+
+				<Label
+					Text="{Binding Model.AccountID}" 
+					IsVisible="{Binding HasName}"
+					Style="{StaticResource Text|Small}"/>
+
+				<controls:InfoView
+					TextID="BackupTip" />
+
+				<StackLayout
+					x:Name="_BackupProviders">
+				</StackLayout>
+
+				<StackLayout
+					Margin="0,24"
+					Orientation="Horizontal">
+					<Label
+						Text="{loc:Translate MarkAsBackedUp}"
+						HorizontalOptions="StartAndExpand" />
+					<Switch
+						x:Name="_Marked"
+						IsToggled="{Binding IsBackedUp, Mode=TwoWay}" 
+						HorizontalOptions="End"
+						Toggled="OnToggleMarked"/>
+				</StackLayout>
+
+				<controls:InfoView
+					x:Name="_DontLose"
+					InfoLevel="Alert"
+					TextID="DontLoseCredential" 
+					IsVisible="{Binding IsBackedUp}"/>
+
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

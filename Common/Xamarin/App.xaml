@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	x:Class="SLD.Tezos.Client.App">
+	<Application.Resources>
+		<ResourceDictionary>
+
+			<!-- Colors -->
+			<Color
+				x:Key="Color|Blue">#2D60D3</Color>
+
+			<Color
+				x:Key="Color|Paper">#FFFFF0</Color>
+
+			<Color
+				x:Key="Color|Text">#111111</Color>
+
+			<Color
+				x:Key="Color|Blue|Background">#FF89A9E4</Color>
+
+			<Color
+				x:Key="Color|Error|Background">#FFBA8F</Color>
+
+			<Color
+				x:Key="Color|Amount|Negative">DarkRed</Color>
+
+			<Color
+				x:Key="Color|Approval|Border">DarkRed</Color>
+
+			<Color
+				x:Key="Color|Dim">#88000000</Color>
+
+			<Color
+				x:Key="Color|Pending|Background">#FFFFE666</Color>
+			
+			<!-- Typography -->
+
+			<Style
+				TargetType="Label">
+
+				<Setter
+					Property="FontSize"
+					Value="16" />
+
+				<Setter
+					Property="TextColor"
+					Value="{StaticResource Color|Text}" />
+
+			</Style>
+
+			<Style
+				TargetType="controls:AmountLabel">
+
+				<Setter
+					Property="FontSize"
+					Value="16" />
+
+				<Setter
+					Property="TextColor"
+					Value="{StaticResource Color|Text}" />
+			</Style>
+
+			<Style
+				x:Key="Text|Small"
+				TargetType="Label">
+				<Setter
+					Property="FontSize"
+					Value="12" />
+			</Style>
+
+			<Style
+				x:Key="Text|Info"
+				TargetType="Label">
+				<Setter
+					Property="FontSize"
+					Value="16" />
+			</Style>
+
+			<Style
+				x:Key="Text|Label"
+				TargetType="Label">
+				<Setter
+					Property="Margin"
+					Value="4, 12, 0, 0" />
+				<Setter
+					Property="TextColor"
+					Value="{StaticResource Color|Dim}" />
+			</Style>
+
+			<Style
+				x:Key="Text|Page|Title"
+				BaseResourceKey="SubtitleStyle"
+				TargetType="Label">
+
+				<Setter
+					Property="Margin"
+					Value="0,12,0,12" />
+
+				<Setter
+					Property="FontSize"
+					Value="24" />
+			</Style>
+
+			<!-- Pages -->
+			<Style
+				x:Key="Page|Layout"
+				TargetType="Layout">
+				<Setter
+					Property="Padding"
+					Value="12,12,12,0" />
+			</Style>
+
+			<Style
+				x:Key="Page|Section|Border"
+				TargetType="Frame">
+				<Setter
+					Property="Padding"
+					Value="12" />
+				<Setter
+					Property="BackgroundColor"
+					Value="Transparent" />
+			</Style>
+
+			<Style
+				x:Key="Page|Input|Border"
+				TargetType="Frame">
+				<Setter
+					Property="Padding"
+					Value="12" />
+				<Setter
+					Property="HorizontalOptions"
+					Value="FillAndExpand" />
+			</Style>
+
+			<Style
+				x:Key="Page|Approval|Frame"
+				TargetType="Frame">
+				<Setter
+					Property="Padding"
+					Value="12" />
+				<Setter
+					Property="OutlineColor"
+					Value="{StaticResource Color|Approval|Border}" />
+				<Setter
+					Property="HorizontalOptions"
+					Value="FillAndExpand" />
+			</Style>
+
+			<Style
+				x:Key="Page|Tips|Border"
+				TargetType="Frame">
+				<Setter
+					Property="Padding"
+					Value="12" />
+				<Setter
+					Property="Margin"
+					Value="0,24,0,12" />
+				<Setter
+					Property="HorizontalOptions"
+					Value="Center" />
+				<Setter
+					Property="OutlineColor"
+					Value="{StaticResource Color|Blue}" />
+				<Setter
+					Property="BackgroundColor"
+					Value="{StaticResource Color|Paper}" />
+
+			</Style>
+
+			<!-- Panel -->
+
+			<!-- Text -->
+			<!-- Buttons -->
+			<Style
+				x:Key="Button|Page|Continue"
+				TargetType="Button">
+				<Setter
+					Property="HorizontalOptions"
+					Value="End" />
+				<Setter
+					Property="Margin"
+					Value="0, 24, 0, 0" />
+			</Style>
+
+			<Style
+				x:Key="Button|Page|Cancel"
+				TargetType="Button">
+				<Setter
+					Property="HorizontalOptions"
+					Value="Start" />
+
+				<Setter
+					Property="VerticalOptions"
+					Value="End" />
+				<Setter
+					Property="Text"
+					Value="Cancel" />
+			</Style>
+
+			<Style
+				x:Key="Button|Page|Back"
+				TargetType="Button">
+				<Setter
+					Property="HorizontalOptions"
+					Value="Start" />
+				<Setter
+					Property="Text"
+					Value="Back" />
+				<!--<Setter
+				Property="Margin"
+				Value="0, 40, 0, 0" />-->
+			</Style>
+
+			<Style
+				x:Key="Button|Page|Bottom"
+				TargetType="Button">
+				<Setter
+					Property="Margin"
+					Value="24" />
+			</Style>
+
+			<Style
+				x:Key="ActivityIndicator|Default"
+				TargetType="ActivityIndicator">
+				<Setter
+					Property="HorizontalOptions"
+					Value="Center" />
+				<Setter
+					Property="VerticalOptions"
+					Value="Center" />
+				<Setter
+					Property="HeightRequest"
+					Value="20" />
+				<Setter
+					Property="WidthRequest"
+					Value="20" />
+			</Style>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

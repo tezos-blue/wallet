@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	Title="{loc:Translate ImportKeys}"
+	x:Class="SLD.Tezos.Client.Identities.ImportKeysPage">
+	<ContentPage.Content>
+		<StackLayout
+			Style="{StaticResource Page|Layout}">
+
+			<!--<Picker
+				x:Name="_Source"
+				IsEnabled="True"
+				Title="{loc:Translate Source}"
+				SelectedIndexChanged="OnSourceChanged">
+				<Picker.Items>
+					<x:String>Fundraiser</x:String>
+					<x:String>Brain</x:String>
+					<x:String>Ed25519</x:String>
+				</Picker.Items>
+			</Picker>-->
+
+			<ScrollView
+				x:Name="_Panel"
+				BindingContext="{Binding Importer}" />
+
+			<Button
+				x:Name="_Import"
+				Text="{loc:Translate Import}"
+				Style="{StaticResource Button|Page|Continue}"
+				IsEnabled="{Binding Importer.CanImport}"
+				Clicked="OnClickImport" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

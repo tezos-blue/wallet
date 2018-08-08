@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="SLD.Tezos.Client.Identities.IdentityTypeCell">
+	<ViewCell.View>
+		<Grid
+			x:Name="_Layout"
+			Margin="0,24">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition
+					Width="64" />
+				<ColumnDefinition
+					Width="*" />
+			</Grid.ColumnDefinitions>
+
+			<Image
+				x:Name="_Image"
+				VerticalOptions="Start" />
+
+			<StackLayout
+				Grid.Column="1">
+				<Label
+					Text="{Binding Name}"
+					FontAttributes="Bold" />
+				<Label
+					Text="{Binding Description}" />
+			</StackLayout>
+		</Grid>
+	</ViewCell.View>
+</ViewCell>

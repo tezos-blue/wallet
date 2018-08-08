@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	Title="{loc:Translate CreateLightIdentity}"
+	x:Class="SLD.Tezos.Client.Identities.CreateIdentityPage">
+	<ContentPage.Content>
+		<ScrollView>
+		<StackLayout>
+			<!--<Grid.RowDefinitions>
+				<RowDefinition
+					Height="Auto" />
+				<RowDefinition
+					Height="*" />
+				<RowDefinition
+					Height="Auto" />
+			</Grid.RowDefinitions>-->
+			<StackLayout
+				Style="{StaticResource Page|Layout}">
+
+				<Label
+					Style="{StaticResource Text|Label}"
+					Text="{loc:Translate IdentityName}" />
+
+				<Entry
+					Text="{Binding Name, Mode=TwoWay}"
+					Placeholder="{loc:Translate IdentityName}" />
+
+				<Label
+					x:Name="_EntryLabel"
+					Style="{StaticResource Text|Label}"
+					Text="{loc:Translate PIN}" />
+
+				<Entry
+					x:Name="_PIN"
+					Text="{Binding Passphrase, Mode=OneWayToSource}"
+					Placeholder="{loc:Translate EnterPIN}"
+					HorizontalTextAlignment="Center"
+					Keyboard="Telephone"
+					TextChanged="OnTextChanged"
+					IsPassword="True" />
+
+				<StackLayout
+					x:Name="_Passphrase"
+					IsVisible="False">
+					<Entry
+						Text="{Binding Passphrase, Mode=TwoWay}"
+						Placeholder="{loc:Translate PassphraseTip}"
+						TextChanged="OnTextChanged"
+						IsPassword="True" />
+
+					<Button
+						Style="{StaticResource Button|Page|Continue}"
+						Text="{loc:Translate Create}"
+						IsEnabled="{Binding CanCreate}"
+						Clicked="OnClickCreate" />
+
+				</StackLayout>
+			</StackLayout>
+
+			<StackLayout
+				Grid.Row="1"
+				VerticalOptions="Center"
+				Style="{StaticResource Page|Layout}">
+
+				<Label
+					Style="{StaticResource Text|Label}"
+					Text="{loc:Translate ImportKeys}" />
+
+				<!--Without imported key-->
+				<Button
+					Text="{loc:Translate FundraiserWallet}"
+					IsVisible="{Binding IsKeysUndefined}"
+					Clicked="OnClickImportFundraiser" />
+
+				<Button
+					Text="{loc:Translate BrainWallet}"
+					IsVisible="{Binding IsKeysUndefined}"
+					Clicked="OnClickImportBrain" />
+
+				<!--<Button
+					Text="Ed25519"
+					IsVisible="{Binding IsKeysUndefined}"
+					Clicked="OnClickImportEd25519" />-->
+
+				<!--With imported key-->
+				<Label
+					Text="{Binding PublicKey}"
+					IsVisible="{Binding IsKeysDefined}"
+					HorizontalOptions="Center"
+					Margin="20" />
+				<!--<Button
+					Text="{loc:Translate RandomKeys}"
+					IsVisible="{Binding IsKeysDefined}"
+					Clicked="OnClickRandom" />-->
+			</StackLayout>
+
+			<controls:InfoView
+				x:Name="_Tip"
+				Grid.Row="2"
+				TextID="CreateLightIdentityTip" />
+		</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

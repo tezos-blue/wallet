@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:accounts="clr-namespace:SLD.Tezos.Client.Accounts"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:service="clr-namespace:SLD.Tezos.Client.Service"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	Title="{loc:Translate Transfer_Title}"
+	x:Class="SLD.Tezos.Client.Accounts.TransferPage">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout
+				Style="{StaticResource Page|Layout}">
+
+				<Label
+					Style="{StaticResource Text|Label}"
+					Text="{loc:Translate SourceAccount}" />
+
+				<accounts:AccountView
+					Margin="-12"
+					Account="{Binding SelectedSource}" />
+
+				<Label
+					x:Name="_Destination"
+					Style="{StaticResource Text|Label}"
+					Text="{loc:Translate DestinationAccount}" />
+
+				<AbsoluteLayout
+					HorizontalOptions="FillAndExpand">
+					<StackLayout
+						AbsoluteLayout.LayoutBounds="0,0,1,1"
+						AbsoluteLayout.LayoutFlags="All"
+						x:Name="_SelectDestinationType">
+
+						<Button
+							Text="{loc:Translate Transfer_ToOwnAccount}"
+							HorizontalOptions="Fill"
+							Clicked="OnClickToOwn" />
+
+						<Button
+							Text="{loc:Translate Transfer_ToForeignAccount}"
+							HorizontalOptions="Fill"
+							Clicked="OnClickToForeign" />
+					</StackLayout>
+
+					<accounts:AccountView
+						x:Name="_AvailableOwn"
+						Account="{Binding SelectedDestination}"
+						AbsoluteLayout.LayoutBounds="0,0,1,1"
+						AbsoluteLayout.LayoutFlags="All"
+						IsVisible="{Binding IsDestinationSelected}" />
+
+					<StackLayout
+						IsVisible="False"
+						AbsoluteLayout.LayoutBounds="0,0,1,1"
+						AbsoluteLayout.LayoutFlags="All"
+						x:Name="_ManualEntry">
+						<StackLayout
+							Orientation="Horizontal">
+							<Entry
+								HorizontalOptions="FillAndExpand"
+								x:Name="_ManualAccountID"
+								Text="{Binding ManualDestinationID, Mode=TwoWay,UpdateSourceEventName=TextChanged}"
+								Placeholder="tz1..." />
+							<Button
+								x:Name="_Paste"
+								Text="{loc:Translate Paste}"
+								IsEnabled="False"
+								Clicked="OnPasteAccountID" />
+						</StackLayout>
+					</StackLayout>
+				</AbsoluteLayout>
+
+				<Label
+					Style="{StaticResource Text|Label}"
+					Text="{loc:Translate TransferAmount}" />
+
+				<StackLayout
+					Orientation="Horizontal">
+
+					<controls:AmountEntry
+						HorizontalOptions="FillAndExpand"
+						Amount="{Binding Amount}"
+						MaxAmount="{Binding MaxAmount}"
+						IsValid="{Binding IsAmountValid}"
+						Placeholder="{Binding AmountHint}" />
+					<Button
+						VerticalOptions="Start"
+						Text="{loc:Translate All}"
+						Clicked="OnTransferAll" />
+				</StackLayout>
+
+				<Button
+					Style="{StaticResource Button|Page|Continue}"
+					Text="{loc:Translate CommitTransfer}"
+					IsEnabled="{Binding CanCommit}"
+					Clicked="OnClickCommit" />
+
+				<controls:InfoView
+					TextID="BePatient" />
+
+				<service:ServiceMessageView
+					x:Name="_ServiceMessage" />
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

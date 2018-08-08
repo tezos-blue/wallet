@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:accounts="clr-namespace:SLD.Tezos.Client.Accounts"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	Title="{Binding Account.Name}"
+	x:Class="SLD.Tezos.Client.Accounts.AccountNotFoundPage">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout
+				Style="{StaticResource Page|Layout}">
+
+				<Button
+					Text="{loc:Translate DeleteAccount}"
+					Clicked="OnClickDelete" />
+
+				<controls:SectionSeparator
+					TitleID="AccountActivity" />
+
+				<controls:AccountEntryList
+					x:Name="_Entries"
+					Spacing="12"
+					ItemsSource="{Binding Entries}">
+					<controls:AccountEntryList.ItemTemplate>
+						<DataTemplate>
+							<!--<accounts:AccountEntryView
+									AccountEntry="{Binding}" />-->
+							<ViewCell>
+								<accounts:AccountEntryView
+									AccountEntry="{Binding}" />
+							</ViewCell>
+						</DataTemplate>
+					</controls:AccountEntryList.ItemTemplate>
+				</controls:AccountEntryList>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

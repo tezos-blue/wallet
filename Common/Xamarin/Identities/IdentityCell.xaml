@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	xmlns:images="clr-namespace:SLD.Tezos.Client.Icons"
+	x:Class="SLD.Tezos.Client.Identities.IdentityCell">
+	<ViewCell.View>
+		<Grid
+			x:Name="_Layout"
+			BackgroundColor="Transparent"
+			Padding="12">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition
+					Width="32" />
+				<ColumnDefinition
+					Width="*" />
+				<ColumnDefinition
+					Width="Auto" />
+			</Grid.ColumnDefinitions>
+
+			<Image
+				x:Name="_Icon" 
+				HeightRequest="24"/>
+
+			<StackLayout
+				Grid.Column="1"
+				VerticalOptions="Center"
+				Orientation="Horizontal">
+
+				<Label
+					x:Name="_Name"
+					Grid.Column="1"
+					Margin="0,0,10,0"
+					VerticalOptions="Center"
+					LineBreakMode="TailTruncation"
+					Text="{Binding Name}" />
+				<Label
+					Text="(" />
+				<Label
+					Text="{Binding Accounts.Count}" />
+
+				<Image
+					Source="{images:Icon ContractAccount-128}"
+					WidthRequest="12" />
+				<Label
+					Text=")" />
+
+				<!--<Image
+					Source="{images:Icon Backup-128}"
+					BackgroundColor="Transparent"
+					WidthRequest="16">
+					<Image.GestureRecognizers>
+						<TapGestureRecognizer
+							Tapped="OnClickBackup" />
+					</Image.GestureRecognizers>
+				</Image>-->
+			</StackLayout>
+			<Button
+				Grid.Column="2"
+				Text="{loc:Translate Backup}"
+				Clicked="OnClickBackup" />
+		</Grid>
+	</ViewCell.View>
+</ViewCell>

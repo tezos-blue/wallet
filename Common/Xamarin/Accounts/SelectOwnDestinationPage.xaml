@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:accounts="clr-namespace:SLD.Tezos.Client.Accounts"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	x:Class="SLD.Tezos.Client.Accounts.SelectOwnDestinationPage">
+	<ContentPage.Content>
+		<Grid Style="{StaticResource Page|Layout}">
+			<Grid.RowDefinitions>
+				<RowDefinition
+					Height="Auto" />
+				<RowDefinition
+					Height="*" />
+			</Grid.RowDefinitions>
+			<Label
+				Text="{loc:Translate DestinationAccount}"
+				Style="{StaticResource Text|Page|Title}" />
+
+			<ListView
+				HasUnevenRows="True"
+				Grid.Row="1"
+				ItemsSource="{Binding AvailableDestinations}"
+				SelectedItem="{Binding SelectedDestination, Mode=TwoWay}"
+				ItemSelected="OnAccountSelected">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<accounts:AccountView
+								Account="{Binding}" />
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

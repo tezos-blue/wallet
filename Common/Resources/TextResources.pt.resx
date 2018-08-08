@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutLightIdentity" xml:space="preserve">
+    <value>Use como identificador para transações diárias, com fundos modestos.
+Fácil e rápido, mas apenas um PIN...</value>
+  </data>
+  <data name="AboutStandardIdentity" xml:space="preserve">
+    <value>Use para transações menos frequentes, de fundos maiores.
+Não muito conveniente, mas bastante seguro.</value>
+  </data>
+  <data name="AccountActivity" xml:space="preserve">
+    <value>atividade da conta</value>
+  </data>
+  <data name="AccountID" xml:space="preserve">
+    <value>id da conta</value>
+  </data>
+  <data name="AccountName" xml:space="preserve">
+    <value>apelido da conta</value>
+  </data>
+  <data name="Accounts" xml:space="preserve">
+    <value>contas</value>
+  </data>
+  <data name="Account_Unknown" xml:space="preserve">
+    <value>Conta desconhecida</value>
+  </data>
+  <data name="Account_UnknownLong" xml:space="preserve">
+    <value>Esta conta é desconhecida pela a rede</value>
+  </data>
+  <data name="Account_Use" xml:space="preserve">
+    <value>usar</value>
+  </data>
+  <data name="Activation" xml:space="preserve">
+    <value>ativação</value>
+  </data>
+  <data name="ActivationCode" xml:space="preserve">
+    <value>Código de ativação</value>
+  </data>
+  <data name="AddIdentity" xml:space="preserve">
+    <value>Adicionar Identificador</value>
+  </data>
+  <data name="AgreementTitle" xml:space="preserve">
+    <value>Acordo</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Tudo</value>
+  </data>
+  <data name="AlphanetDisclaimer" xml:space="preserve">
+    <value>Fique tranquilo. A alphanet ainda não possui bloco gênesis. Seu saldo será 0.</value>
+  </data>
+  <data name="AmountRequired" xml:space="preserve">
+    <value>Valor requerido</value>
+  </data>
+  <data name="Approval_From" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="Approval_Sign" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="Approval_To" xml:space="preserve">
+    <value>para</value>
+  </data>
+  <data name="Approval_TotalAmount" xml:space="preserve">
+    <value>valor total</value>
+  </data>
+  <data name="Approval_Transferring" xml:space="preserve">
+    <value>transferindo</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="BackupByFile" xml:space="preserve">
+    <value>Gravar um arquivo de backup</value>
+  </data>
+  <data name="BackupByMail" xml:space="preserve">
+    <value>Fazer backup por email</value>
+  </data>
+  <data name="BackupFor" xml:space="preserve">
+    <value>Backup de identificador |</value>
+  </data>
+  <data name="BackupMailBody" xml:space="preserve">
+    <value>IMPORTANTE:
+1. Verifique se há um anexo no email (Alguns clientes de email têm problemas)
+2. NÃO inclua sua senha neste email. Altamente inseguro.
+Envie para você mesmo para ter um backup na sua caixa de entrada.
+É seguro enviar este email para qualquer pessoa, desde que você NÃO revele o PIN/Senha.</value>
+  </data>
+  <data name="BackupTip" xml:space="preserve">
+    <value>Mantenha seu backup disponível em qualquer lugar, envie-o para si mesmo.
+É seguro se só você sabe seu PIN ou senha.</value>
+  </data>
+  <data name="BackupVia" xml:space="preserve">
+    <value>Selecione o destino do backup.</value>
+  </data>
+  <data name="BackupYourIdentity" xml:space="preserve">
+    <value>Antes de receber fundos, favor realizar backup deste identificador.
+Sem um backup, você pode perder todos os fundos deste dispositivo.</value>
+  </data>
+  <data name="Balance" xml:space="preserve">
+    <value>saldo</value>
+  </data>
+  <data name="BePatient" xml:space="preserve">
+    <value>Transações podem demorar alguns minutos</value>
+  </data>
+  <data name="BlueStatement" xml:space="preserve">
+    <value>tezos.blue</value>
+  </data>
+  <data name="BrainWallet" xml:space="preserve">
+    <value>Brain Wallet</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>cancelar</value>
+  </data>
+  <data name="CommitDelegate" xml:space="preserve">
+    <value>Delegar</value>
+  </data>
+  <data name="CommitTransfer" xml:space="preserve">
+    <value>transferir</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>copiar</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Criar</value>
+  </data>
+  <data name="CreateAccount" xml:space="preserve">
+    <value>criar conta</value>
+  </data>
+  <data name="CreateLightIdentity" xml:space="preserve">
+    <value>Criar com PIN</value>
+  </data>
+  <data name="CreateLightIdentityTip" xml:space="preserve">
+    <value>Importante: Não esqueça seu PIN!
+Esta carteira dará a você (ou ao ladrão) o trabalhão de tentar todas as combinações. 
+Mas é possível. Então não armazene grandes quantias aqui.</value>
+  </data>
+  <data name="CreateStandardIdentity" xml:space="preserve">
+    <value>Criar com uma senha</value>
+  </data>
+  <data name="CreateStandardIdentityTip" xml:space="preserve">
+    <value>Importante: Não perca sua senha!
+Se perder ou esquecer, todo o saldo deste identificador será perdido para sempre.
+Escreva em um papel, letra por letra, armazene em local seguro.</value>
+  </data>
+  <data name="Delegate" xml:space="preserve">
+    <value>Delegar</value>
+  </data>
+  <data name="DelegateAmount" xml:space="preserve">
+    <value>Valor a delegar</value>
+  </data>
+  <data name="DelegatedTo" xml:space="preserve">
+    <value>Delegado para</value>
+  </data>
+  <data name="DelegateTo" xml:space="preserve">
+    <value>Delegar para</value>
+  </data>
+  <data name="Delegate_Title" xml:space="preserve">
+    <value>Delegar fundos</value>
+  </data>
+  <data name="DeleteAccount" xml:space="preserve">
+    <value>Excluir conta</value>
+  </data>
+  <data name="DestinationAccount" xml:space="preserve">
+    <value>conta destino</value>
+  </data>
+  <data name="DestinationAccountID" xml:space="preserve">
+    <value>id da conta destino</value>
+  </data>
+  <data name="DontLoseCredential" xml:space="preserve">
+    <value>Não perca seu PIN ou senha. É sério.
+E certifique-se de ter seu backup em outro dispositivo.</value>
+  </data>
+  <data name="EMail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailAndPassphrase" xml:space="preserve">
+    <value>Email e Credenciais</value>
+  </data>
+  <data name="EnterPIN" xml:space="preserve">
+    <value>digite seu PIN aqui</value>
+  </data>
+  <data name="EnterPinToRestore" xml:space="preserve">
+    <value>digite o PIN para restaurar</value>
+  </data>
+  <data name="EnterPINToSign" xml:space="preserve">
+    <value>digite o PIN para confirmar</value>
+  </data>
+  <data name="Error_ServiceDown" xml:space="preserve">
+    <value>Nossos serviços estão fora do ar. Favor tentar novamente mais tarde.</value>
+  </data>
+  <data name="ExceedsMaxAmount" xml:space="preserve">
+    <value>Excede o valor máximo</value>
+  </data>
+  <data name="Exit_Header" xml:space="preserve">
+    <value>O app precisa ser fechado</value>
+  </data>
+  <data name="Fees" xml:space="preserve">
+    <value>taxas</value>
+  </data>
+  <data name="FirstIdentityLogin" xml:space="preserve">
+    <value>Primeiro Destravamento</value>
+  </data>
+  <data name="FirstIdentityLoginTip" xml:space="preserve">
+    <value>Seu identificador ficará destravado até que seu dispositivo entre em standby.</value>
+  </data>
+  <data name="FirstStep_P1" xml:space="preserve">
+    <value>Entre na rede Tezos criando seu primeiro identificador. 
+Nenhuma informação privada será necessária, nem revelada.</value>
+  </data>
+  <data name="FirstStep_Title" xml:space="preserve">
+    <value>primeiros passos</value>
+  </data>
+  <data name="FromFaucet" xml:space="preserve">
+    <value>do faucet</value>
+  </data>
+  <data name="FundedAccount" xml:space="preserve">
+    <value>criação da conta</value>
+  </data>
+  <data name="FundedBy" xml:space="preserve">
+    <value>criada por</value>
+  </data>
+  <data name="FundraiserCheck" xml:space="preserve">
+    <value>Certifique-se de que a chave pública abaixo é igual a da sua paper-wallet antes de importar. Caso contrário, utilize outras credenciais.</value>
+  </data>
+  <data name="FundraiserWallet" xml:space="preserve">
+    <value>Paper Wallet (PDF do Fundraiser)</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="IAgree" xml:space="preserve">
+    <value>Eu concordo</value>
+  </data>
+  <data name="Identities" xml:space="preserve">
+    <value>Identificadores</value>
+  </data>
+  <data name="IdentityAccount" xml:space="preserve">
+    <value>conta de identificador</value>
+  </data>
+  <data name="IdentityAlreadyKnown" xml:space="preserve">
+    <value>Identificador já existe na carteira</value>
+  </data>
+  <data name="IdentityID" xml:space="preserve">
+    <value>Identificador da conta</value>
+  </data>
+  <data name="IdentityName" xml:space="preserve">
+    <value>Apelido para o identificador da conta</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Importar</value>
+  </data>
+  <data name="ImportBrainTip" xml:space="preserve">
+    <value>Qualquer um que digitar exatamente este texto terá acesso ao identificador. Escolha com critério, algo longo e peculiar. Esqueça as letras de música e literatura.</value>
+  </data>
+  <data name="ImportBrainWallet" xml:space="preserve">
+    <value>Abrir Brain Wallet</value>
+  </data>
+  <data name="ImportFaucet" xml:space="preserve">
+    <value>Importar Identificador de Teste</value>
+  </data>
+  <data name="ImportFundraiserWallet" xml:space="preserve">
+    <value>Importar Paper Wallet</value>
+  </data>
+  <data name="ImportKeys" xml:space="preserve">
+    <value>Importar Chaves</value>
+  </data>
+  <data name="ImpossibleToGuess" xml:space="preserve">
+    <value>impossível de adivinhar</value>
+  </data>
+  <data name="InternalTransfer" xml:space="preserve">
+    <value>transferência interna</value>
+  </data>
+  <data name="Invalid" xml:space="preserve">
+    <value>inválido</value>
+  </data>
+  <data name="InvalidPassphraseTryAgain" xml:space="preserve">
+    <value>Senha inválida. Tente novamente.</value>
+  </data>
+  <data name="InvalidPINTryAgain" xml:space="preserve">
+    <value>PIN Inválido. Tente novamente.</value>
+  </data>
+  <data name="InvalidSentence" xml:space="preserve">
+    <value>Frase inválida</value>
+  </data>
+  <data name="KeyData" xml:space="preserve">
+    <value>Dados da chave</value>
+  </data>
+  <data name="KeyText" xml:space="preserve">
+    <value>Texto da Chave</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Português Brasil</value>
+  </data>
+  <data name="LightIdentity" xml:space="preserve">
+    <value>PIN de 4 dígitos</value>
+  </data>
+  <data name="MarkAsBackedUp" xml:space="preserve">
+    <value>Marcar com "backup feito"</value>
+  </data>
+  <data name="max" xml:space="preserve">
+    <value>máx</value>
+  </data>
+  <data name="mine" xml:space="preserve">
+    <value>Eu</value>
+  </data>
+  <data name="Mnemonic" xml:space="preserve">
+    <value>Mnemônico (15 palavras)</value>
+  </data>
+  <data name="NegativeAmount" xml:space="preserve">
+    <value>Somente valores positivos</value>
+  </data>
+  <data name="NetworkFee" xml:space="preserve">
+    <value>taxa de rede</value>
+  </data>
+  <data name="NotAnAmount" xml:space="preserve">
+    <value>Valor inválido</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OriginateAccount" xml:space="preserve">
+    <value>Criar uma nova conta</value>
+  </data>
+  <data name="Passphrase" xml:space="preserve">
+    <value>senha</value>
+  </data>
+  <data name="PassphraseTip" xml:space="preserve">
+    <value>quanto maior, melhor...</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>colar</value>
+  </data>
+  <data name="PendingTransactions" xml:space="preserve">
+    <value>Transações pendentes</value>
+  </data>
+  <data name="PIN" xml:space="preserve">
+    <value>PIN</value>
+  </data>
+  <data name="PIN4Digits" xml:space="preserve">
+    <value>PIN de 4 dígitos</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Privacidade</value>
+  </data>
+  <data name="PrivacyPromise" xml:space="preserve">
+    <value>"tezos.blue não armazena ou transmite nenhum tipo de informação que o identifique pessoalmente.
+tezos.blue envia telemetria de uso abstrato e relatórios de erro. 
+Esses dados tem um tempo de retenção de 7 dias."</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>tezos.blue</value>
+  </data>
+  <data name="Quit" xml:space="preserve">
+    <value>Sair</value>
+  </data>
+  <data name="RandomKeys" xml:space="preserve">
+    <value>Chaves Aleatórias</value>
+  </data>
+  <data name="ReceivedBy" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="ReleaseNotes" xml:space="preserve">
+    <value>Notas da versão </value>
+  </data>
+  <data name="RepeatPIN" xml:space="preserve">
+    <value>repita o PIN</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Algo deu errado.</value>
+  </data>
+  <data name="RestoreIdentity" xml:space="preserve">
+    <value>Restaurar identificador</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Tentar novamente</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Segurança</value>
+  </data>
+  <data name="SecurityPromise" xml:space="preserve">
+    <value>Nenhuma chave privada ou outro segredo jamais trafega pela rede.
+Segredos na memória do dispositivo ou armazenamento são criptografados por AES com uma senha escolhida por você.
+O app da wallet não tem acesso às suas chaves privadas no mecanismo subjacente.
+Para conhecer melhor o conceito de segurança do mecanismo, por favor veja o 
+Guia do Revisor de Segurança no repositório do GitHub tezos-blue/client.</value>
+  </data>
+  <data name="SelectIdentityType" xml:space="preserve">
+    <value>Selecione o tipo de Identificador</value>
+  </data>
+  <data name="ServiceFee" xml:space="preserve">
+    <value>taxa de serviço</value>
+  </data>
+  <data name="Service_Connected" xml:space="preserve">
+    <value>Conectado ao tezos.blue</value>
+  </data>
+  <data name="Service_Connecting" xml:space="preserve">
+    <value>Conectando...</value>
+  </data>
+  <data name="Service_ConnectingFailed" xml:space="preserve">
+    <value>Não foi possível conectar ao serviço da tezos.blue. Tentarei novamente.</value>
+  </data>
+  <data name="Service_CycleCleanup" xml:space="preserve">
+    <value>A rede está processando uma limpeza de ciclo.
+Transações estarão indisponíveis por alguns minutos.</value>
+  </data>
+  <data name="Service_ServiceStateChanged" xml:space="preserve">
+    <value>Status do serviço mudou</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>Compartilhar</value>
+  </data>
+  <data name="SignOrigination" xml:space="preserve">
+    <value>Confirmar criação de conta</value>
+  </data>
+  <data name="SignTransfer" xml:space="preserve">
+    <value>Confirmar transferência</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Origem</value>
+  </data>
+  <data name="SourceAccount" xml:space="preserve">
+    <value>conta de origem</value>
+  </data>
+  <data name="StandardIdentity" xml:space="preserve">
+    <value>Senha ou frase</value>
+  </data>
+  <data name="StorageFee" xml:space="preserve">
+    <value>Taxa de armazenamento</value>
+  </data>
+  <data name="TotalBalance" xml:space="preserve">
+    <value>saldo total</value>
+  </data>
+  <data name="Transfer" xml:space="preserve">
+    <value>transferir</value>
+  </data>
+  <data name="TransferAmount" xml:space="preserve">
+    <value>valor a transferir</value>
+  </data>
+  <data name="TransferredTo" xml:space="preserve">
+    <value>para</value>
+  </data>
+  <data name="Transfer_Title" xml:space="preserve">
+    <value>Transfeir tez</value>
+  </data>
+  <data name="Transfer_ToForeignAccount" xml:space="preserve">
+    <value>para outra conta</value>
+  </data>
+  <data name="Transfer_ToOwnAccount" xml:space="preserve">
+    <value>para a minha conta</value>
+  </data>
+  <data name="Unlock" xml:space="preserve">
+    <value>Destravar</value>
+  </data>
+  <data name="UserPromise" xml:space="preserve">
+    <value>O software e serviços são fornecidos "como se apresentam", sem nenhum tipo de garantia. Use por seu próprio risco.</value>
+  </data>
+  <data name="UserStatement" xml:space="preserve">
+    <value>você</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Bem-vindo a tezos.blue</value>
+  </data>
+  <data name="Word" xml:space="preserve">
+    <value>Palavra</value>
+  </data>
+</root>

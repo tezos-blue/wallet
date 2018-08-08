@@ -1,0 +1,25 @@
+﻿{
+  "dependencies": {
+    "Microsoft.AppCenter.Analytics": "1.6.0",
+    "Microsoft.AppCenter.Crashes": "1.6.0",
+    "Microsoft.NETCore.UniversalWindowsPlatform": "6.1.4",
+    "NETStandard.Library": "2.0.3",
+    "Newtonsoft.Json": "11.0.2",
+    "System.Security.Cryptography.Algorithms": "4.3.1",
+    "Tezos.Blue.Platforms": "0.3.0",
+    "WindowsAzure.Messaging.Managed": "0.1.7.9",
+    "Xam.Plugins.Settings": "4.0.0.7",
+    "Xamarin.Forms": "3.0.0.446417"
+  },
+  "frameworks": {
+    "uap10.0.16299": {}
+  },
+  "runtimes": {
+    "win10-arm": {},
+    "win10-arm-aot": {},
+    "win10-x86": {},
+    "win10-x86-aot": {},
+    "win10-x64": {},
+    "win10-x64-aot": {}
+  }
+}

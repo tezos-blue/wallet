@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutLightIdentity" xml:space="preserve">
+    <value>Sử dụng làm nhận dạng cho các giao dịch thường xuyên với số tiền nhỏ  , nhanh chóng và dễ dàng , chỉ cần sử dụng mã PIN ...</value>
+  </data>
+  <data name="AboutStandardIdentity" xml:space="preserve">
+    <value>Sử dụng cho các giao dịch không thường xuyên với số tiền lớn , không thuận tiện nhưng khá an toàn .</value>
+  </data>
+  <data name="AccountActivity" xml:space="preserve">
+    <value>Kích hoạt tài khoản</value>
+  </data>
+  <data name="AccountID" xml:space="preserve">
+    <value>ID Tài khoản</value>
+  </data>
+  <data name="AccountName" xml:space="preserve">
+    <value>Tên tài khoản</value>
+  </data>
+  <data name="Accounts" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+  <data name="Account_Unknown" xml:space="preserve">
+    <value>Không xác định được tài khoản</value>
+  </data>
+  <data name="Account_UnknownLong" xml:space="preserve">
+    <value>Tài khoản này chưa được biết đến trong mạng</value>
+  </data>
+  <data name="Account_Use" xml:space="preserve">
+    <value>Tài khoản sử dụng</value>
+  </data>
+  <data name="Activation" xml:space="preserve">
+    <value>Kích hoạt</value>
+  </data>
+  <data name="ActivationCode" xml:space="preserve">
+    <value>Mã kích hoạt</value>
+  </data>
+  <data name="AddIdentity" xml:space="preserve">
+    <value>Thêm danh tính</value>
+  </data>
+  <data name="AgreementTitle" xml:space="preserve">
+    <value>Thỏa thuận</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="AlphanetDisclaimer" xml:space="preserve">
+    <value>Giữ , Các alphanet không có khối genesis nào được nêu ra. Số dư của bạn sẽ bằng 0.</value>
+  </data>
+  <data name="AmountRequired" xml:space="preserve">
+    <value>Số tiền yêu cầu </value>
+  </data>
+  <data name="Approval_From" xml:space="preserve">
+    <value>Từ</value>
+  </data>
+  <data name="Approval_Sign" xml:space="preserve">
+    <value>Kí tên</value>
+  </data>
+  <data name="Approval_To" xml:space="preserve">
+    <value>Đến</value>
+  </data>
+  <data name="Approval_TotalAmount" xml:space="preserve">
+    <value>Tổng cộng</value>
+  </data>
+  <data name="Approval_Transferring" xml:space="preserve">
+    <value>Chuyển giao</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Sao lưu</value>
+  </data>
+  <data name="BackupByFile" xml:space="preserve">
+    <value>Lưu tệp sao lưu</value>
+  </data>
+  <data name="BackupByMail" xml:space="preserve">
+    <value>Sao lưu bằng thư</value>
+  </data>
+  <data name="BackupFor" xml:space="preserve">
+    <value>Nhận dạng sao lưu</value>
+  </data>
+  <data name="BackupMailBody" xml:space="preserve">
+    <value>QUAN TRỌNG:
+1. Kiểm tra xem có tệp đính kèm với thư này không (Một số ứng dụng thư khách gặp sự cố)  
+2. KHÔNG bao gồm cụm mật khẩu của bạn trong thư này. Rất không an toàn.
+Gửi cho chính bạn để có một bản sao lưu trong hộp thư đến của bạn. 
+Bạn có thể gửi thư này cho bất kỳ người nào, miễn là bạn KHÔNG tiết lộ PIN / Cụm mật khẩu.</value>
+  </data>
+  <data name="BackupTip" xml:space="preserve">
+    <value>Giữ bản sao lưu của bạn có sẵn ở mọi nơi, gửi cho chính bạn.
+Sẽ an toàn nếu bạn chỉ biết mã PIN hoặc cụm mật khẩu của mình.</value>
+  </data>
+  <data name="BackupVia" xml:space="preserve">
+    <value>Chọn mục tiêu sao lưu.</value>
+  </data>
+  <data name="BackupYourIdentity" xml:space="preserve">
+    <value>Trước khi bạn nhận tiền , vui lòng sao lưu danh tính này. Nếu không có bản sao lưu, bạn có thể mất tất cả số tiền với thiết bị này.</value>
+  </data>
+  <data name="Balance" xml:space="preserve">
+    <value>Cân đối</value>
+  </data>
+  <data name="BePatient" xml:space="preserve">
+    <value>Giao dịch có thể mất tới vài phút.</value>
+  </data>
+  <data name="BlueStatement" xml:space="preserve">
+    <value>tezos.blue</value>
+  </data>
+  <data name="BrainWallet" xml:space="preserve">
+    <value>Brain Wallet ( Não ví ) Bạn có thể dùng Brain Wallet để thay đổi ví của mình .</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Huỷ bỏ</value>
+  </data>
+  <data name="CommitDelegate" xml:space="preserve">
+    <value>Uỷ Quyền</value>
+  </data>
+  <data name="CommitTransfer" xml:space="preserve">
+    <value>chuyển khoản</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Sao chép</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Tạo </value>
+  </data>
+  <data name="CreateAccount" xml:space="preserve">
+    <value>Tạo tài khoản</value>
+  </data>
+  <data name="CreateLightIdentity" xml:space="preserve">
+    <value>Tạo bằng mã PIN</value>
+  </data>
+  <data name="CreateLightIdentityTip" xml:space="preserve">
+    <value>Chú ý : Đừng quên mã PIN của bạn!
+Ví này sẽ cung cấp cho bạn hoặc kẻ trộm của thiết bị của bạn một thời gian khó khăn cố gắng tất cả các kết hợp. Nhưng nó có thể, do đó, không lưu trữ các quỹ lớn ở đây.</value>
+  </data>
+  <data name="CreateStandardIdentity" xml:space="preserve">
+    <value>Tạo bằng cụm mật khẩu</value>
+  </data>
+  <data name="CreateStandardIdentityTip" xml:space="preserve">
+    <value>Quan trọng: Không mất cụm mật khẩu của bạn!
+Nếu bạn mất hoặc quên nó, tất cả các quỹ nhận dạng của bạn bị mất, mãi mãi.
+Viết nó xuống, chính xác đến bức thư, lưu trữ nó ở đâu đó an toàn.</value>
+  </data>
+  <data name="Delegate" xml:space="preserve">
+    <value>Ủy quyền</value>
+  </data>
+  <data name="DelegateAmount" xml:space="preserve">
+    <value>Số tiền ủy thác</value>
+  </data>
+  <data name="DelegatedTo" xml:space="preserve">
+    <value>Giao cho </value>
+  </data>
+  <data name="DelegateTo" xml:space="preserve">
+    <value>Người nhận ủy quyền </value>
+  </data>
+  <data name="Delegate_Title" xml:space="preserve">
+    <value>Quỹ ủy thác </value>
+  </data>
+  <data name="DeleteAccount" xml:space="preserve">
+    <value>Xóa tài khoản </value>
+  </data>
+  <data name="DestinationAccount" xml:space="preserve">
+    <value>Tài khoản dến </value>
+  </data>
+  <data name="DestinationAccountID" xml:space="preserve">
+    <value>ID Tài khoản đến </value>
+  </data>
+  <data name="DontLoseCredential" xml:space="preserve">
+    <value>Đừng đánh mất mã PIN hoặc mật khẩu của bạn. Nghiêm túc đấy.
+Và đảm bảo bạn tìm thấy bản sao lưu của mình từ một thiết bị khác. </value>
+  </data>
+  <data name="EMail" xml:space="preserve">
+    <value>Địa chỉ email</value>
+  </data>
+  <data name="EmailAndPassphrase" xml:space="preserve">
+    <value>Email và thông tin đăng nhập</value>
+  </data>
+  <data name="EnterPIN" xml:space="preserve">
+    <value>Nhập  mã PIN của bạn ở đây</value>
+  </data>
+  <data name="EnterPinToRestore" xml:space="preserve">
+    <value>Nhập mã PIN để khôi phục</value>
+  </data>
+  <data name="EnterPINToSign" xml:space="preserve">
+    <value>Nhập mã PIN để đăng kí</value>
+  </data>
+  <data name="ExceedsMaxAmount" xml:space="preserve">
+    <value>Số tiền vượt quá tối đa</value>
+  </data>
+  <data name="Fees" xml:space="preserve">
+    <value>phí </value>
+  </data>
+  <data name="FirstIdentityLogin" xml:space="preserve">
+    <value>Mở khóa đầu tiên </value>
+  </data>
+  <data name="FirstIdentityLoginTip" xml:space="preserve">
+    <value>Danh tính của bạn sẽ vẫn được mở khóa cho đến khi thiết bị của bạn chuyển sang chế độ chờ.</value>
+  </data>
+  <data name="FirstStep_P1" xml:space="preserve">
+    <value>Nhập mạng Tezos bằng cách tạo danh tính đầu tiên của bạn.
+Không có thông tin cá nhân  được yêu cầu hoặc tiết lộ.</value>
+  </data>
+  <data name="FirstStep_Title" xml:space="preserve">
+    <value>Những bước đầu tiên</value>
+  </data>
+  <data name="FromFaucet" xml:space="preserve">
+    <value>Từ vòi</value>
+  </data>
+  <data name="FundedAccount" xml:space="preserve">
+    <value>Tài khoản được tài trợ </value>
+  </data>
+  <data name="FundedBy" xml:space="preserve">
+    <value>Được tài trợ bởi</value>
+  </data>
+  <data name="FundraiserWallet" xml:space="preserve">
+    <value>Ví giấy tờ ( Gây quỹ PDF)</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
+  <data name="IAgree" xml:space="preserve">
+    <value>Tôi đồng ý</value>
+  </data>
+  <data name="Identities" xml:space="preserve">
+    <value>Nhận dạng</value>
+  </data>
+  <data name="IdentityAccount" xml:space="preserve">
+    <value>Nhận dạng tài khoản </value>
+  </data>
+  <data name="IdentityAlreadyKnown" xml:space="preserve">
+    <value>Danh tính đã tồn tại trong ví </value>
+  </data>
+  <data name="IdentityID" xml:space="preserve">
+    <value>Nhận dạng ID</value>
+  </data>
+  <data name="IdentityName" xml:space="preserve">
+    <value>Tên nhận dạng </value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Nhập</value>
+  </data>
+  <data name="ImportBrainTip" xml:space="preserve">
+    <value>Bất kỳ ai nhập  chính xác văn bản  này sẽ có quyền truy cập vào danh tính. Chọn cẩn thận, một cái gì đó dài và kỳ lạ.
+</value>
+  </data>
+  <data name="ImportBrainWallet" xml:space="preserve">
+    <value>Mở Wallet Brain</value>
+  </data>
+  <data name="ImportEd25519Tip" xml:space="preserve">
+    <value>./alphanet.sh khách hàng hiển thị danh tính my_identity -show-secret</value>
+  </data>
+  <data name="ImportFaucet" xml:space="preserve">
+    <value>Nhập danh tính thử nghiệm</value>
+  </data>
+  <data name="ImportFundraiserWallet" xml:space="preserve">
+    <value>Nhập ví giấy tờ</value>
+  </data>
+  <data name="ImportKeys" xml:space="preserve">
+    <value>Nhập khoá</value>
+  </data>
+  <data name="ImpossibleToGuess" xml:space="preserve">
+    <value>không thể đoán được </value>
+  </data>
+  <data name="InternalTransfer" xml:space="preserve">
+    <value>chuyển nội bộ</value>
+  </data>
+  <data name="Invalid" xml:space="preserve">
+    <value>không hợp lệ</value>
+  </data>
+  <data name="InvalidPassphraseTryAgain" xml:space="preserve">
+    <value>Cụm mật khẩu không hợp lệ . Thử lại .</value>
+  </data>
+  <data name="InvalidPINTryAgain" xml:space="preserve">
+    <value>Mã PIN không hợp lệ . Thử lại .</value>
+  </data>
+  <data name="InvalidSentence" xml:space="preserve">
+    <value>Câu không hợp lệ </value>
+  </data>
+  <data name="KeyData" xml:space="preserve">
+    <value>Dữ liệu quan trọng </value>
+  </data>
+  <data name="KeyText" xml:space="preserve">
+    <value>Từ khoá</value>
+  </data>
+  <data name="LightIdentity" xml:space="preserve">
+    <value>Mã PIN 4 chữ số </value>
+  </data>
+  <data name="MarkAsBackedUp" xml:space="preserve">
+    <value>Đánh dấu là đã sao lưu </value>
+  </data>
+  <data name="max" xml:space="preserve">
+    <value>tối đa</value>
+  </data>
+  <data name="mine" xml:space="preserve">
+    <value>Tôi </value>
+  </data>
+  <data name="Mnemonic" xml:space="preserve">
+    <value>15 từ ghi nhớ</value>
+  </data>
+  <data name="NegativeAmount" xml:space="preserve">
+    <value>Số tiền dư</value>
+  </data>
+  <data name="NetworkFee" xml:space="preserve">
+    <value>phí mạng </value>
+  </data>
+  <data name="NotAnAmount" xml:space="preserve">
+    <value>Không phải số tiền hợp lệ</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>Được</value>
+  </data>
+  <data name="OriginateAccount" xml:space="preserve">
+    <value>tài trợ một tài khoản mới </value>
+  </data>
+  <data name="Passphrase" xml:space="preserve">
+    <value>cụm mật khẩu</value>
+  </data>
+  <data name="PassphraseTip" xml:space="preserve">
+    <value>càng dài càng tốt</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>dán</value>
+  </data>
+  <data name="PendingTransactions" xml:space="preserve">
+    <value>Giao dịch đang chờ xử lý</value>
+  </data>
+  <data name="PIN" xml:space="preserve">
+    <value>PIN</value>
+  </data>
+  <data name="PIN4Digits" xml:space="preserve">
+    <value>Mã PIN 4 chữ số </value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Riêng tư</value>
+  </data>
+  <data name="PrivacyPromise" xml:space="preserve">
+    <value>tezos.blue không lưu trữ hoặc truyền bất kỳ loại thông tin nào nhận diện cá nhân bạn. 
+tezos.blue gửi từ xa sử dụng trừu tượng và báo cáo sự cố. Dữ liệu này có thời gian lưu giữ là 7 ngày.</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>tezos.blue</value>
+  </data>
+  <data name="Quit" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="RandomKeys" xml:space="preserve">
+    <value>Phím ngẫu nhiên</value>
+  </data>
+  <data name="ReceivedBy" xml:space="preserve">
+    <value>Từ</value>
+  </data>
+  <data name="ReleaseNotes" xml:space="preserve">
+    <value>Ghi chú phát hành</value>
+  </data>
+  <data name="ReleaseNote_0_2_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepeatPIN" xml:space="preserve">
+    <value>nhập lại mã PIN</value>
+  </data>
+  <data name="RestoreIdentity" xml:space="preserve">
+    <value>Khôi phục danh tính</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Thử lại </value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Bảo mật </value>
+  </data>
+  <data name="SecurityPromise" xml:space="preserve">
+    <value>Không có khóa riêng tư hoặc bí mật nào khác từng đi qua mạng. 
+Bí mật trong bộ nhớ hoặc bộ nhớ của thiết bị được mã hóa AES bằng cụm mật khẩu bạn chọn. 
+Ứng dụng ví không có quyền truy cập vào khóa cá nhân của bạn trong công cụ cơ bản. 
+Để hiểu sâu hơn về khái niệm bảo mật của mạng lưới, hãy xem Hướng dẫn của người đánh giá bảo mật trong kho lưu trữ GitHub tezos-blue / client.</value>
+  </data>
+  <data name="SelectIdentityType" xml:space="preserve">
+    <value>Chọn loại danh tính</value>
+  </data>
+  <data name="Service_Connected" xml:space="preserve">
+    <value>Đã kết nối tới tezos.blue</value>
+  </data>
+  <data name="Service_Connecting" xml:space="preserve">
+    <value>Đang kết nối ...</value>
+  </data>
+  <data name="Service_ConnectingFailed" xml:space="preserve">
+    <value>Không thể kết nối với dịch vụ tezos.blue. Sẽ thử lại.</value>
+  </data>
+  <data name="Service_CycleCleanup" xml:space="preserve">
+    <value>Mạng hiện đang dọn dẹp một chu kỳ.
+Giao dịch bị vô hiệu hóa trong vài phút. </value>
+  </data>
+  <data name="Service_ServiceStateChanged" xml:space="preserve">
+    <value>Cài đặt</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>Chia sẻ</value>
+  </data>
+  <data name="SignOrigination" xml:space="preserve">
+    <value>Tạo tài khoản đăng nhập</value>
+  </data>
+  <data name="SignTransfer" xml:space="preserve">
+    <value>Kí chuyển</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Nguồn</value>
+  </data>
+  <data name="SourceAccount" xml:space="preserve">
+    <value>tài khoản nguồn</value>
+  </data>
+  <data name="StandardIdentity" xml:space="preserve">
+    <value>Mật khẩu hoặc cụm từ</value>
+  </data>
+  <data name="StorageFee" xml:space="preserve">
+    <value>phí lưu kho</value>
+  </data>
+  <data name="TotalBalance" xml:space="preserve">
+    <value>tổng số dư</value>
+  </data>
+  <data name="Transfer" xml:space="preserve">
+    <value>chuyển khoản</value>
+  </data>
+  <data name="TransferAmount" xml:space="preserve">
+    <value>số tiền chuyển khoản</value>
+  </data>
+  <data name="TransferredTo" xml:space="preserve">
+    <value>tới</value>
+  </data>
+  <data name="Transfer_Title" xml:space="preserve">
+    <value>Chuyển khoản tez</value>
+  </data>
+  <data name="Transfer_ToForeignAccount" xml:space="preserve">
+    <value>đến tài khoản nước ngoài</value>
+  </data>
+  <data name="Transfer_ToOwnAccount" xml:space="preserve">
+    <value>sở hữu tài khoản </value>
+  </data>
+  <data name="Unlock" xml:space="preserve">
+    <value>Mở khoá</value>
+  </data>
+  <data name="UserPromise" xml:space="preserve">
+    <value>Phần mềm và dịch vụ được cung cấp "nguyên trạng" mà không có bất kỳ loại bảo hành nào. Sử dụng của riêng bạn.
+</value>
+  </data>
+  <data name="UserStatement" xml:space="preserve">
+    <value>bạn</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Chào mừng bạn đến với tezos.blue</value>
+  </data>
+  <data name="Word" xml:space="preserve">
+    <value>Văn bản </value>
+  </data>
+</root>

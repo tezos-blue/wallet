@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SLD.Tezos.Client.SplashScreen">
+    <ContentPage.Content>
+
+		<Grid>
+			<StackLayout
+				HorizontalOptions="Center"
+				VerticalOptions="Center">
+				<Image x:Name="_Icon" HorizontalOptions="Center" WidthRequest="128"/>
+				<Label
+					HorizontalOptions="Center"
+					Text="tezos.blue" />
+				<Label
+					HorizontalOptions="Center"
+					x:Name="_Version" />
+				<Label
+					HorizontalOptions="Center"
+					Text="betanet"
+					TextColor="DarkRed"/>
+				<ActivityIndicator
+					IsRunning="True"
+					HorizontalOptions="Fill" />
+			</StackLayout>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

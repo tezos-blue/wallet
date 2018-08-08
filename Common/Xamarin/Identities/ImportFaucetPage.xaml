@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:accounts="clr-namespace:SLD.Tezos.Client.Accounts"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	x:Class="SLD.Tezos.Client.Identities.ImportFaucetPage">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout
+				Style="{StaticResource Page|Layout}">
+
+				<Label
+					x:Name="_Title"
+					Text="{loc:Translate ImportFaucet}"
+					Style="{StaticResource Text|Page|Title}" />
+
+				<StackLayout>
+
+					<Label
+						Style="{DynamicResource Text|Label}"
+						Text="{loc:Translate IdentityID}" />
+
+					<Label
+						Text="{Binding IdentityID}" />
+
+					<controls:AmountLabel
+						Amount="{Binding Amount}" />
+
+					<Label
+						Style="{DynamicResource Text|Label}"
+						Text="{loc:Translate IdentityName}" />
+
+					<Entry
+						Text="{Binding Name}" />
+
+					<Label
+						Style="{DynamicResource Text|Label}"
+						Text="{loc:Translate PIN4Digits}" />
+
+					<Entry
+						Placeholder="PIN"
+						IsPassword="True"
+						Keyboard="Telephone"
+						Text="{Binding PIN}" />
+
+					<Entry
+						Placeholder="{loc:Translate RepeatPIN}"
+						IsPassword="True"
+						Keyboard="Telephone"
+						Text="{Binding RepeatPIN}" />
+
+				</StackLayout>
+
+				<StackLayout
+					Orientation="Horizontal"
+					HorizontalOptions="End"
+					Margin="0, 24, 0, 0">
+					<Button
+						Text="{loc:Translate Cancel}"
+						Clicked="OnClickCancel"
+						Margin="12, 0" />
+					<Button
+						IsEnabled="{Binding CanImport}"
+						Text="{loc:Translate Import}"
+						Clicked="OnClickImport" />
+					<StackLayout />
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

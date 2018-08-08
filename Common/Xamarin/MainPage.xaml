@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:local="clr-namespace:SLD.Tezos.Client"
+	xmlns:accounts="clr-namespace:SLD.Tezos.Client.Accounts"
+	xmlns:service="clr-namespace:SLD.Tezos.Client.Service"
+	xmlns:firststeps="clr-namespace:SLD.Tezos.Client.FirstSteps"
+	x:Name="_Page"
+	x:Class="SLD.Tezos.Client.MainPage">
+	<ContentPage.Content>
+		<Grid
+			Style="{StaticResource Page|Layout}">
+			<Grid.RowDefinitions>
+				<RowDefinition
+					Height="Auto" />
+				<RowDefinition
+					Height="*" />
+				<RowDefinition
+					Height="Auto" />
+			</Grid.RowDefinitions>
+
+			<Grid
+				Grid.Row="0"
+				IsVisible="{Binding CurrentIdentity.NeedsBackup}"
+				>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition
+						Width="*" />
+					<ColumnDefinition
+						Width="Auto" />
+				</Grid.ColumnDefinitions>
+				<controls:InfoView
+					InfoLevel="Alert"
+					TextID="BackupYourIdentity" />
+				<Button
+					Grid.Column="1"
+					VerticalOptions="Center"
+					Clicked="OnClickBackup"
+					Text="{loc:Translate Backup}" />
+			</Grid>
+			
+			<ListView
+				x:Name="_Accounts"
+				HasUnevenRows="True"
+				VerticalOptions="FillAndExpand"
+				Grid.Row="1"
+				ItemSelected="OnAccountSelected"
+				ItemsSource="{Binding CurrentIdentity.Model.Accounts}">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<accounts:AccountCell Account="{Binding .}"/>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+
+			<service:ServiceMessageView
+				Grid.Row="2"
+				/>
+
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

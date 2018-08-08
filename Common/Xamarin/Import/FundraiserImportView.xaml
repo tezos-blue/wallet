@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	x:Class="SLD.Tezos.Client.Import.FundraiserImportView">
+	<ContentView.Content>
+		<StackLayout>
+
+			<StackLayout
+				x:Name="_Mnemonic">
+
+				<Label
+					Style="{StaticResource Text|Label}"
+					Text="{loc:Translate Mnemonic}" />
+
+				<Label
+					x:Name="_Words"
+					TextColor="DarkBlue"
+					FontAttributes="Bold"
+					Text="{Binding Sentence}" />
+
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition
+							Width="*" />
+						<ColumnDefinition
+							Width="*" />
+					</Grid.ColumnDefinitions>
+					<Grid>
+						<Entry
+							x:Name="_Current"
+							Text="{Binding CurrentWord}"
+							HorizontalTextAlignment="Center"
+							IsVisible="{Binding IsSentenceValid}"
+							Placeholder="{Binding WordTip}" />
+						<Label
+							BackgroundColor="{StaticResource Color|Error|Background}"
+							Text="{loc:Translate InvalidSentence}"
+							HorizontalTextAlignment="Center"
+							VerticalTextAlignment="Center"
+							IsVisible="{Binding IsSentenceInvalid}" />
+					</Grid>
+					<Button
+						Grid.Column="1"
+						Text="{Binding BestGuess}"
+						IsEnabled="{Binding CanGuess}"
+						IsVisible="{Binding IsSentenceValid}"
+						Clicked="OnSelectGuess" />
+					<Button
+						Grid.Column="1"
+						Text="{loc:Translate Retry}"
+						IsVisible="{Binding IsSentenceInvalid}"
+						Clicked="OnReset" />
+				</Grid>
+			</StackLayout>
+
+			<StackLayout
+				x:Name="_Credentials"
+				IsVisible="False">
+
+				<Label
+					Style="{StaticResource Text|Label}"
+					Text="{loc:Translate EmailAndPassphrase}" />
+
+				<Entry
+					Text="{Binding EMail}"
+					Placeholder="{loc:Translate EMail}" 
+					Keyboard="Email"/>
+
+				<Entry
+					Text="{Binding Passphrase, Mode=OneWayToSource}"
+					Placeholder="{loc:Translate Passphrase}"
+					IsPassword="True" />
+
+				<Entry
+					Text="{Binding ActivationCode}"
+					Placeholder="{loc:Translate ActivationCode}"
+					/>
+
+				<Label
+					Text="{Binding CurrentHash}"
+					FontAttributes="Bold"
+					TextColor="DarkBlue"
+					HorizontalOptions="Center"
+					Margin="0,12" />
+
+				<controls:InfoView
+					TextID="FundraiserCheck"
+					InfoLevel="Alert" />
+			</StackLayout>
+
+		</StackLayout>
+	</ContentView.Content>
+</ContentView>

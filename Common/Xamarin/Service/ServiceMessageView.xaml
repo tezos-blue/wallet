@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SLD.Tezos.Client.Service.ServiceMessageView">
+  <ContentView.Content>
+		<Grid
+			x:Name="_Layout"
+			>
+			<Label
+				x:Name="_Message"
+				Margin="20"
+				VerticalTextAlignment="Center"
+				VerticalOptions="Center"/>
+		</Grid>
+  </ContentView.Content>
+</ContentView>

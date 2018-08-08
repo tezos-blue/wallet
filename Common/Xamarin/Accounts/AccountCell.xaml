@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	x:Class="SLD.Tezos.Client.Accounts.AccountCell">
+	<ViewCell.View>
+		<Grid
+			x:Name="_Layout"
+			BackgroundColor="Transparent"
+			VerticalOptions="Start"
+			Padding="18"
+			>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition
+					Width="32" />
+				<ColumnDefinition
+					Width="*" />
+				<ColumnDefinition
+					Width="Auto" />
+			</Grid.ColumnDefinitions>
+
+			<Image
+				x:Name="_Icon"
+				VerticalOptions="Start" />
+
+			<!--<Label
+				IsVisible="False"
+				x:Name="_Name"
+				Grid.Column="1"
+				Margin="0,0,10,0"
+				LineBreakMode="TailTruncation"
+				Text="{Binding Name}" />-->
+
+			<!--Delegate -->
+			<StackLayout
+				x:Name="_Delegate"
+				Grid.Column="1"
+				VerticalOptions="Center"
+				>
+
+				<!--<Label
+					Style="{StaticResource Text|Small}"
+					Text="{loc:Translate DelegatedTo}"
+					IsVisible="{Binding IsDelegated}" />-->
+
+				<Label
+					x:Name="_Name"
+					Grid.Row="1"
+					Margin="0,0,10,0"
+					LineBreakMode="TailTruncation"
+					Text="{Binding Name}" />
+
+				<StackLayout
+					Grid.Row="2"
+					HorizontalOptions="Start"
+					VerticalOptions="End"
+					IsVisible="{Binding HasPendingChanges}"
+					Orientation="Horizontal">
+
+					<ActivityIndicator
+						Style="{StaticResource ActivityIndicator|Default}"
+						IsRunning="{Binding HasPendingChanges}" />
+
+					<controls:AmountLabel
+						Style="{StaticResource Text|Small}"
+						Amount="{Binding AmountPending}" />
+				</StackLayout>
+			</StackLayout>
+
+
+			<Grid
+				VerticalOptions="Center"
+				Grid.Column="2">
+				<controls:AmountLabel
+					x:Name="_Balance"
+					Amount="{Binding Balance}" />
+				<ActivityIndicator
+					x:Name="_BalanceBusy"
+					Style="{StaticResource ActivityIndicator|Default}" />
+			</Grid>
+		</Grid>
+	</ViewCell.View>
+</ViewCell>

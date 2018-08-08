@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:accounts="clr-namespace:SLD.Tezos.Client.Accounts"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:service="clr-namespace:SLD.Tezos.Client.Service"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	Title="{Binding Account.Name}"
+	x:Class="SLD.Tezos.Client.Accounts.AccountPage">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout
+				Style="{StaticResource Page|Layout}">
+
+				<StackLayout
+					Margin="0, 36, 0, 12">
+					
+				<controls:AmountLabel
+					x:Name="_Balance"
+					HorizontalOptions="Fill"
+					HorizontalTextAlignment="Center"
+					FontSize="Large"
+					Amount="{Binding Account.Balance}" />
+
+					<StackLayout
+						IsVisible="{Binding Account.IsDelegated}">
+
+						<Label
+							Text="{loc:Translate DelegatedTo}"
+							HorizontalOptions="Center"
+							Style="{StaticResource Text|Small}" />
+
+						<Label
+							Text="{Binding Account.DelegateID}"
+							HorizontalOptions="Center"
+							Style="{StaticResource Text|Small}" />
+
+					</StackLayout>
+					
+				</StackLayout>
+
+				<controls:SectionSeparator
+					TitleID="Account_Use" />
+				<Button
+					IsEnabled="{Binding CanSendTransactions}"
+					Text="{loc:Translate Transfer}"
+					Clicked="OnClickTransfer" />
+
+				<Button
+					IsEnabled="{Binding CanSendTransactions}"
+					Text="{loc:Translate OriginateAccount}"
+					Clicked="OnClickOriginate" />
+
+				<Button
+					IsEnabled="{Binding CanSendTransactions}"
+					Text="{loc:Translate Delegate}"
+					Clicked="OnClickDelegate" />
+
+				<service:ServiceMessageView 
+					Margin="0, 12, 0, 0"/>
+
+				<controls:SectionSeparator
+					TitleID="AccountID" />
+
+				<StackLayout
+					Orientation="Horizontal">
+					<Label
+						HorizontalOptions="StartAndExpand"
+						VerticalOptions="Center"
+						Text="{Binding Account.AccountID}" />
+					<Button
+						Text="{loc:Translate Copy}"
+						Clicked="OnCopyAccountID" />
+				</StackLayout>
+
+				<StackLayout
+					IsVisible="{Binding Account.HasPendingChanges}">
+
+					<Grid>
+						<controls:SectionSeparator
+							TitleID="PendingTransactions" />
+					
+						<ActivityIndicator
+							HorizontalOptions="End"
+							VerticalOptions="End"
+							Margin="0,0,0,12"
+							Style="{StaticResource ActivityIndicator|Default}"
+							IsRunning="{Binding Account.HasPendingChanges}" />
+					</Grid>
+
+					<controls:AccountChangeList
+						x:Name="_Pending"
+						ItemsSource="{Binding Account.PendingChanges}">
+						<controls:AccountChangeList.ItemTemplate>
+							<DataTemplate>
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition
+											Width="*" />
+										<ColumnDefinition
+											Width="Auto" />
+									</Grid.ColumnDefinitions>
+
+									<Label
+										Text="{Binding ContraAccountID}"
+										LineBreakMode="TailTruncation" />
+
+									<controls:AmountLabel
+										Margin="12,0,0,0"
+										Grid.Column="1"
+										Amount="{Binding Amount}" />
+								</Grid>
+							</DataTemplate>
+						</controls:AccountChangeList.ItemTemplate>
+					</controls:AccountChangeList>
+				</StackLayout>
+
+				<StackLayout>
+					<controls:SectionSeparator
+						TitleID="AccountActivity" />
+					<controls:AccountEntryList
+						x:Name="_Entries"
+						Spacing="12"
+						ItemsSource="{Binding Entries}">
+						<controls:AccountEntryList.ItemTemplate>
+							<DataTemplate>
+								<!--<accounts:AccountEntryView
+									AccountEntry="{Binding}" />-->
+								<ViewCell>
+									<accounts:AccountEntryView
+										AccountEntry="{Binding .}" />
+								</ViewCell>
+							</DataTemplate>
+						</controls:AccountEntryList.ItemTemplate>
+					</controls:AccountEntryList>
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

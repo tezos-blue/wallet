@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:SLD.Tezos.Client.Controls"
+	xmlns:loc="clr-namespace:SLD.Tezos.Client.Localization"
+	xmlns:identities="clr-namespace:SLD.Tezos.Client.Identities"
+	x:Class="SLD.Tezos.Client.FirstSteps.FirstStepsPage"
+	Title="{loc:Translate FirstStep_Title}">
+	<ContentPage.Content>
+		<ScrollView
+			BackgroundColor="White">
+			<StackLayout
+				Style="{StaticResource Page|Layout}">
+
+				<controls:InfoView
+					TextID="FirstStep_P1" />
+
+				<identities:IdentityTypeSelector
+					x:Name="_Selector" />
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

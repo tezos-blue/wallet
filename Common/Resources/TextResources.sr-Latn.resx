@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutLightIdentity" xml:space="preserve">
+    <value>Koristiti za dnevne transakcije i skromnije iznose. Brzo i lako, samo uz PIN</value>
+  </data>
+  <data name="AboutStandardIdentity" xml:space="preserve">
+    <value>Koristiti za ređe transakcije i veće iznose. Ne toliko pogodan način, ali poprilično siguran.</value>
+  </data>
+  <data name="AccountActivity" xml:space="preserve">
+    <value>Upotreba naloga</value>
+  </data>
+  <data name="AccountID" xml:space="preserve">
+    <value>Nalog ID</value>
+  </data>
+  <data name="AccountName" xml:space="preserve">
+    <value>Ime naloga</value>
+  </data>
+  <data name="Accounts" xml:space="preserve">
+    <value>Nalozi</value>
+  </data>
+  <data name="Account_Unknown" xml:space="preserve">
+    <value>Nepoznat nalog</value>
+  </data>
+  <data name="Account_UnknownLong" xml:space="preserve">
+    <value>Nalog nije prepoznat na mreži</value>
+  </data>
+  <data name="Account_Use" xml:space="preserve">
+    <value>Koristi</value>
+  </data>
+  <data name="Activation" xml:space="preserve">
+    <value>Aktivacija</value>
+  </data>
+  <data name="ActivationCode" xml:space="preserve">
+    <value>Aktivacijski Kod</value>
+  </data>
+  <data name="AddIdentity" xml:space="preserve">
+    <value>Dodaj Identitet</value>
+  </data>
+  <data name="AgreementTitle" xml:space="preserve">
+    <value>Sporazum</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Sve</value>
+  </data>
+  <data name="AlphanetDisclaimer" xml:space="preserve">
+    <value>Samo opušteno. "Alphanet" još uvek nema "genesis" blokova. Tvoje stanje će biti 0.</value>
+  </data>
+  <data name="AmountRequired" xml:space="preserve">
+    <value>Potreban iznos</value>
+  </data>
+  <data name="Approval_From" xml:space="preserve">
+    <value>Od</value>
+  </data>
+  <data name="Approval_Sign" xml:space="preserve">
+    <value>Potpis</value>
+  </data>
+  <data name="Approval_To" xml:space="preserve">
+    <value>Za</value>
+  </data>
+  <data name="Approval_TotalAmount" xml:space="preserve">
+    <value>Konačni iznos</value>
+  </data>
+  <data name="Approval_Transferring" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="BackupByFile" xml:space="preserve">
+    <value>Snimi backup Datoteku</value>
+  </data>
+  <data name="BackupByMail" xml:space="preserve">
+    <value>Backup elektronskom poštom</value>
+  </data>
+  <data name="BackupFor" xml:space="preserve">
+    <value>Backup identiteta</value>
+  </data>
+  <data name="BackupMailBody" xml:space="preserve">
+    <value>VAŽNO: 
+1. Proveriti da li ova elektronska pošta ima prilog (Neki pretraživači imaju problema sa prikazom)  
+2. NIKAKO nemojte uključiti Vaš "passphrase" u ovu elektronsku poštu. Veoma je nebezbedno. 
+Pošaljite sebi da bi imali backup u Vašem INBOX-u.
+Bezbedno je slati ovu elektronsku poštu bilo kome,sve dok ona ne sadrži Vaš PIN/Passphrase.</value>
+  </data>
+  <data name="BackupTip" xml:space="preserve">
+    <value>Pristupi svom backup-u odasvud, pošalji ga sebi. 
+Ovo je bezbedno samo ako znaš svoj PIN ili Passphrase.</value>
+  </data>
+  <data name="BackupVia" xml:space="preserve">
+    <value>Odaberi destinaciju za backup.</value>
+  </data>
+  <data name="BackupYourIdentity" xml:space="preserve">
+    <value>Pre nego što primiš sredstva, molimo da sačuvaš svoj identitet.
+Bez backup-a postoji mogućnost da izgubiš sredstva na ovom uređaju.</value>
+  </data>
+  <data name="Balance" xml:space="preserve">
+    <value>Stanje</value>
+  </data>
+  <data name="BePatient" xml:space="preserve">
+    <value>Transakcija može potrajati do par minuta.</value>
+  </data>
+  <data name="BlueStatement" xml:space="preserve">
+    <value>tezos.blue</value>
+  </data>
+  <data name="BrainWallet" xml:space="preserve">
+    <value>"Brain" Novčanik</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Otkaži</value>
+  </data>
+  <data name="CommitDelegate" xml:space="preserve">
+    <value>Delegiraj</value>
+  </data>
+  <data name="CommitTransfer" xml:space="preserve">
+    <value>Prenos</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Kopiraj</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Napravi</value>
+  </data>
+  <data name="CreateAccount" xml:space="preserve">
+    <value>Napravi nalog</value>
+  </data>
+  <data name="CreateLightIdentity" xml:space="preserve">
+    <value>Napravi sa PIN-om</value>
+  </data>
+  <data name="CreateLightIdentityTip" xml:space="preserve">
+    <value>VAŽNO: Nemoj zaboraviti PIN!
+Lopovima će trebati mnogo vremena da isprobaju sve kombinacije,
+ali postoji mogućnost da uspeju, te stoga nemojte ovaj novčanik
+koristiti za velike iznose.</value>
+  </data>
+  <data name="CreateStandardIdentity" xml:space="preserve">
+    <value>Napravi sa Passphrase</value>
+  </data>
+  <data name="CreateStandardIdentityTip" xml:space="preserve">
+    <value>VAŽNO: Nemoj izgubiti tvoj Passphrase!
+Ako ga izgubiš ili zaboraviš,sva tvoja sredstva biće izgubljena zauvek.
+Zapiši Passhprase, sačuvaj na sigurnom.</value>
+  </data>
+  <data name="Delegate" xml:space="preserve">
+    <value>Delegat</value>
+  </data>
+  <data name="DelegateAmount" xml:space="preserve">
+    <value>Iznos za delegiranje</value>
+  </data>
+  <data name="DelegatedTo" xml:space="preserve">
+    <value>Delegirano za</value>
+  </data>
+  <data name="DelegateTo" xml:space="preserve">
+    <value>Delegiraj za</value>
+  </data>
+  <data name="Delegate_Title" xml:space="preserve">
+    <value>Delegiraj sredstva</value>
+  </data>
+  <data name="DeleteAccount" xml:space="preserve">
+    <value>Obriši nalog</value>
+  </data>
+  <data name="DestinationAccount" xml:space="preserve">
+    <value>Nalog primaoca</value>
+  </data>
+  <data name="DestinationAccountID" xml:space="preserve">
+    <value>ID Naloga primaoca</value>
+  </data>
+  <data name="DontLoseCredential" xml:space="preserve">
+    <value>Nemoj izgubiti PIN ili Passphrase. Ozbiljno.
+I pobrini se da imaš backup i na drugom uređaju.</value>
+  </data>
+  <data name="EMail" xml:space="preserve">
+    <value>E-pošta</value>
+  </data>
+  <data name="EmailAndPassphrase" xml:space="preserve">
+    <value>E-pošta i Akreditiv</value>
+  </data>
+  <data name="EnterPIN" xml:space="preserve">
+    <value>Ukucaj svoj PIN</value>
+  </data>
+  <data name="EnterPinToRestore" xml:space="preserve">
+    <value>Ukucaj PIN za vraćanje</value>
+  </data>
+  <data name="EnterPINToSign" xml:space="preserve">
+    <value>Ukucaj PIN za ulaz</value>
+  </data>
+  <data name="ExceedsMaxAmount" xml:space="preserve">
+    <value>Prekoračen MAX iznos</value>
+  </data>
+  <data name="Fees" xml:space="preserve">
+    <value>Naknade</value>
+  </data>
+  <data name="FirstIdentityLogin" xml:space="preserve">
+    <value>Prvo otključaj</value>
+  </data>
+  <data name="FirstIdentityLoginTip" xml:space="preserve">
+    <value>Tvoj identitet će biti otključan dok uređaj ne ode u standby.</value>
+  </data>
+  <data name="FirstStep_P1" xml:space="preserve">
+    <value>Uđi na Tezos mrežu kreirajući svoj prvi identitet.
+Neće se tražiti privatne informacije,niti će se razotkriti.</value>
+  </data>
+  <data name="FirstStep_Title" xml:space="preserve">
+    <value>prvi koraci</value>
+  </data>
+  <data name="FromFaucet" xml:space="preserve">
+    <value>od faucet-a</value>
+  </data>
+  <data name="FundedAccount" xml:space="preserve">
+    <value>nalog finansijera</value>
+  </data>
+  <data name="FundedBy" xml:space="preserve">
+    <value>finansirano od</value>
+  </data>
+  <data name="FundraiserWallet" xml:space="preserve">
+    <value>Papirni novčanik (Fundraiser PDF)</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Kuća</value>
+  </data>
+  <data name="IAgree" xml:space="preserve">
+    <value>Slažem se</value>
+  </data>
+  <data name="Identities" xml:space="preserve">
+    <value>Identiteti</value>
+  </data>
+  <data name="IdentityAccount" xml:space="preserve">
+    <value>Nalog identiteta</value>
+  </data>
+  <data name="IdentityAlreadyKnown" xml:space="preserve">
+    <value>Identitet je već u novčaniku</value>
+  </data>
+  <data name="IdentityID" xml:space="preserve">
+    <value>Identitet id</value>
+  </data>
+  <data name="IdentityName" xml:space="preserve">
+    <value>Naziv identiteta</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Uvezi</value>
+  </data>
+  <data name="ImportBrainTip" xml:space="preserve">
+    <value>Svako ko ovde ukuca isti tekst imaće pristup identitetu. Zato biraj pažljivo,
+nešto dugačko i ludo. Nikako neku pesmu ili nešto poznato.</value>
+  </data>
+  <data name="ImportBrainWallet" xml:space="preserve">
+    <value>Otvoti "Brain" novčanik</value>
+  </data>
+  <data name="ImportEd25519Tip" xml:space="preserve">
+    <value>./alphanet.sh client show identity my_identity -show-secret</value>
+  </data>
+  <data name="ImportFaucet" xml:space="preserve">
+    <value>Uvezi Test identitet</value>
+  </data>
+  <data name="ImportFundraiserWallet" xml:space="preserve">
+    <value>Uvezi Papirni novčanik</value>
+  </data>
+  <data name="ImportKeys" xml:space="preserve">
+    <value>Uvezi Ključ</value>
+  </data>
+  <data name="ImpossibleToGuess" xml:space="preserve">
+    <value>Nemoguće pogoditi</value>
+  </data>
+  <data name="InternalTransfer" xml:space="preserve">
+    <value>Interni transfer</value>
+  </data>
+  <data name="Invalid" xml:space="preserve">
+    <value>Neispravno</value>
+  </data>
+  <data name="InvalidPassphraseTryAgain" xml:space="preserve">
+    <value>Neispravan Passphrase. Probaj ponovo.</value>
+  </data>
+  <data name="InvalidPINTryAgain" xml:space="preserve">
+    <value>Neispravan PIN. Probaj ponovo.</value>
+  </data>
+  <data name="InvalidSentence" xml:space="preserve">
+    <value>Neispravna rečenica</value>
+  </data>
+  <data name="KeyData" xml:space="preserve">
+    <value>Podatak za ključ</value>
+  </data>
+  <data name="KeyText" xml:space="preserve">
+    <value>Tekst ključa</value>
+  </data>
+  <data name="LightIdentity" xml:space="preserve">
+    <value>4-broj PIN</value>
+  </data>
+  <data name="MarkAsBackedUp" xml:space="preserve">
+    <value>Obeleži kao backup-ovano</value>
+  </data>
+  <data name="max" xml:space="preserve">
+    <value>max</value>
+  </data>
+  <data name="mine" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="Mnemonic" xml:space="preserve">
+    <value>Mnemonic (15 reči)</value>
+  </data>
+  <data name="NegativeAmount" xml:space="preserve">
+    <value>Samo pozitivni iznosi</value>
+  </data>
+  <data name="NetworkFee" xml:space="preserve">
+    <value>naknada mreže</value>
+  </data>
+  <data name="NotAnAmount" xml:space="preserve">
+    <value>Iznos nije validan</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OriginateAccount" xml:space="preserve">
+    <value>Napuni novi nalog</value>
+  </data>
+  <data name="Passphrase" xml:space="preserve">
+    <value>passphrase</value>
+  </data>
+  <data name="PassphraseTip" xml:space="preserve">
+    <value>duže,bolje...</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>nalepi</value>
+  </data>
+  <data name="PendingTransactions" xml:space="preserve">
+    <value>Transakcija na čekanju</value>
+  </data>
+  <data name="PIN" xml:space="preserve">
+    <value>PIN</value>
+  </data>
+  <data name="PIN4Digits" xml:space="preserve">
+    <value>4-broj PIN</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Privatnost</value>
+  </data>
+  <data name="PrivacyPromise" xml:space="preserve">
+    <value>tezos.blue niti sakuplja niti deli vaše privatne podatke i informacije.
+tezos.blue šalje apstraktnu upotrebu telemetrije i izveštaje o rušenju.
+Vreme zadržavanja ovih podataka je 7 dana.</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>tezos.blue</value>
+  </data>
+  <data name="Quit" xml:space="preserve">
+    <value>Izađi</value>
+  </data>
+  <data name="RandomKeys" xml:space="preserve">
+    <value>Nasumični Ključevi</value>
+  </data>
+  <data name="ReceivedBy" xml:space="preserve">
+    <value>od</value>
+  </data>
+  <data name="ReleaseNotes" xml:space="preserve">
+    <value>Poruka o verziji</value>
+  </data>
+  <data name="ReleaseNote_0_2_5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RepeatPIN" xml:space="preserve">
+    <value>ponovi PIN</value>
+  </data>
+  <data name="RestoreIdentity" xml:space="preserve">
+    <value>Povrati identitet</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Pokušaj ponovo</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Sigurnost</value>
+  </data>
+  <data name="SecurityPromise" xml:space="preserve">
+    <value>Ni jedan privatni ključ ili tajna neće biti puštena na mrežu.
+Tajne u memoriji uređaja su AES-enkriptovane sa passphrase po tvom izboru.
+Novčanik nema pristupa tvojim ključevima u procesima rada.
+Za dublje razumevanje sigurnosnog koncepta, molimo vas pogledajte
+Security Reviewer's Guide na GitHub repository tezos-blue/client.</value>
+  </data>
+  <data name="SelectIdentityType" xml:space="preserve">
+    <value>Selektuj Tip Identiteta</value>
+  </data>
+  <data name="Service_Connected" xml:space="preserve">
+    <value>Konektovan sa tezos.blue.</value>
+  </data>
+  <data name="Service_Connecting" xml:space="preserve">
+    <value>Konektovanje...</value>
+  </data>
+  <data name="Service_ConnectingFailed" xml:space="preserve">
+    <value>Nemože se uspostaviti veza sa tezos.blue servisima. Pokušaćemo ponovo.</value>
+  </data>
+  <data name="Service_CycleCleanup" xml:space="preserve">
+    <value>Mreža trenutno čisti krug.
+Transakcije neće biti moguće nekoliko minuta.</value>
+  </data>
+  <data name="Service_ServiceStateChanged" xml:space="preserve">
+    <value>Status servisa je promenjen</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Podešavanja</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>Podeli</value>
+  </data>
+  <data name="SignOrigination" xml:space="preserve">
+    <value>Potpiši pravljenje naloga</value>
+  </data>
+  <data name="SignTransfer" xml:space="preserve">
+    <value>Potpiši transakciju</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Izvor </value>
+  </data>
+  <data name="SourceAccount" xml:space="preserve">
+    <value>izvorni nalog</value>
+  </data>
+  <data name="StandardIdentity" xml:space="preserve">
+    <value>Šifra ili fraza</value>
+  </data>
+  <data name="StorageFee" xml:space="preserve">
+    <value>naknada za skladištenje</value>
+  </data>
+  <data name="TotalBalance" xml:space="preserve">
+    <value>ukupno stanje</value>
+  </data>
+  <data name="Transfer" xml:space="preserve">
+    <value>transfer </value>
+  </data>
+  <data name="TransferAmount" xml:space="preserve">
+    <value>iznos za transfer</value>
+  </data>
+  <data name="TransferredTo" xml:space="preserve">
+    <value>za</value>
+  </data>
+  <data name="Transfer_Title" xml:space="preserve">
+    <value>Transferuj tez</value>
+  </data>
+  <data name="Transfer_ToForeignAccount" xml:space="preserve">
+    <value>za tuđi nalog</value>
+  </data>
+  <data name="Transfer_ToOwnAccount" xml:space="preserve">
+    <value>za svoj nalog</value>
+  </data>
+  <data name="Unlock" xml:space="preserve">
+    <value>Otključaj</value>
+  </data>
+  <data name="UserPromise" xml:space="preserve">
+    <value>Ovaj softver i usluge koje daje koristi se "kakav jeste" bez ikakvih garancija. 
+Koristite ga na sopstvenu odgovornost.</value>
+  </data>
+  <data name="UserStatement" xml:space="preserve">
+    <value>ti</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Dobro došli u tezos.blue</value>
+  </data>
+  <data name="Word" xml:space="preserve">
+    <value>Reč</value>
+  </data>
+</root>
